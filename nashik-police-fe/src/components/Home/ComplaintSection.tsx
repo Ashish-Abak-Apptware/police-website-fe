@@ -6,36 +6,36 @@ import Input from "../UI/InputField";
 const services = [
   {
     title: "ऑनलाइन गुन्‍हेाची नोंद करा",
-    image: "/images/complaints/complaint1.png",
+    image: "/image/complaints/complaint1.png",
   },
   {
     title: "हरवलेली किंवा सापडलेली माहिती नोंदवा",
-    image: "/images/complaints/complaint4.png",
+    image: "/image/complaints/complaint4.png",
   },
   {
     title: "चोरलेला/हरवलेला मोबाइल ब्लॉक करा",
-    image: "/images/complaints/complaint3.png",
+    image: "/image/complaints/complaint3.png",
   },
   {
     title: "आर्थिक फसवणुकीची तक्रार नोंदवा",
-    image: "/images/complaints/complaint2.png",
+    image: "/image/complaints/complaint2.png",
   },
   {
     title: "भाडेकरू माहिती नोंदवा",
-    image: "/images/complaints/complaint1.png",
+    image: "/image/complaints/complaint1.png",
   },
   {
     title: "महिला/मुलांवरील गुन्‍हेाची तक्रार नोंदवा",
-    image: "/images/complaints/complaint5.png",
+    image: "/image/complaints/complaint5.png",
     highlight: true,
   },
   {
     title: "हरवलेल्या मोबाइलची सूचना",
-    image: "/images/complaints/complaint7.png",
+    image: "/image/complaints/complaint7.png",
   },
   {
     title: "इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा",
-    image: "/images/complaints/complaint6.png",
+    image: "/image/complaints/complaint6.png",
   },
 ];
 export const ComplaintSection = () => {
@@ -120,7 +120,7 @@ export const ComplaintSection = () => {
             className="relative w-[172px] h-[257px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint1.png'
+              src='/image/complaints/complaint1.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -134,7 +134,7 @@ export const ComplaintSection = () => {
             className="relative w-[172px] h-[257px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint1.png'
+              src='/image/complaints/complaint1.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -151,7 +151,7 @@ export const ComplaintSection = () => {
             className="relative w-[153px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src="/images/complaints/complaint4.png"
+              src="/image/complaints/complaint4.png"
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -165,7 +165,7 @@ export const ComplaintSection = () => {
             className="relative w-[153px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint3.png'
+              src='/image/complaints/complaint3.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -180,7 +180,7 @@ export const ComplaintSection = () => {
             className="relative w-[330px] h-[330px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint5.png'
+              src='/image/complaints/complaint5.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -198,7 +198,7 @@ export const ComplaintSection = () => {
             className="relative w-[530px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint7.png'
+              src='/image/complaints/complaint7.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -214,7 +214,7 @@ export const ComplaintSection = () => {
             className="relative w-[180px] h-[319px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint2.png'
+              src='/image/complaints/complaint2.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -228,7 +228,7 @@ export const ComplaintSection = () => {
             className="relative w-[180px] h-[390px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/images/complaints/complaint6.png'
+              src='/image/complaints/complaint6.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />

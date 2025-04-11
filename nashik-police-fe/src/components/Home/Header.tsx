@@ -7,7 +7,7 @@ export const Header = () => {
       <section className="relative flex gap-[158px] justify-center bg-hero-section-bg bg-no-repeat bg-contain xl:w-[1280px] xl:mx-4 xl:pt-5 xl:h-[800px]">
         <div className="xl:w-[311px] justify-center flex flex-col gap-3 pb-40">
           <Image
-            src="/images/header/header6.png"
+            src="/image/header/header6.png"
             alt="logo"
             height={80}
             width={80}
@@ -21,7 +21,7 @@ export const Header = () => {
           <div className="flex gap-[10px]">
             <div className="w-[253px] h-[100px] rounded-[15px]">
               <Image
-                src="/images/header/header1.png"
+                src="/image/header/header1.png"
                 alt="header1"
                 height={500}
                 width={500}
@@ -34,7 +34,7 @@ export const Header = () => {
                 <br /> बैठक
               </h5>
               <Image
-                src="/images/header/arrow.svg"
+                src="/image/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -45,7 +45,7 @@ export const Header = () => {
           <div className="flex gap-[10px]">
             <div className="flex flex-col gap-2 w-[145px] h-[160px] rounded-[15px] bg-white p-5">
               <Image
-                src="/images/header/header2.png"
+                src="/image/header/header2.png"
                 alt="header2"
                 height={500}
                 width={500}
@@ -65,7 +65,7 @@ export const Header = () => {
               </h5>
               <p>अजून वाचा</p>
               <Image
-                src="/images/header/header3.png"
+                src="/image/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
@@ -81,7 +81,7 @@ export const Header = () => {
             </div>
             <div className="w-[156px] h-[170px] rounded-[15px] bg-white pt-5 overflow-hidden flex flex-col justify-between items-center">
               <Image
-                src="/images/header/header5.svg"
+                src="/image/header/header5.svg"
                 alt="header5"
                 height={500}
                 width={500}
@@ -106,7 +106,7 @@ export const Header = () => {
                 </p>
               </div>
               <Image
-                src="/images/header/arrow.svg"
+                src="/image/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -132,7 +132,7 @@ export const Header = () => {
             नाशिक पोलिसांचा पुढाकार
               </h5>
               <Image
-                src="/images/header/arrow.svg"
+                src="/image/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -147,7 +147,7 @@ export const Header = () => {
             आपला हक्काचा <br /> सहायक
           </p>
           <Image
-            src="/images/header/arrow.svg"
+            src="/image/header/arrow.svg"
             alt="arrow"
             height={40}
             width={40}

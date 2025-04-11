@@ -18,7 +18,7 @@ export default function SocialMediaFeed() {
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2">
                 <Link href="https://www.facebook.com/NashikCityPolice" target="_blank">
-                  <Image src="/images/socialMedia.png" alt="मुख्य बातमी" width={800} height={450} className="rounded-xl w-full h-auto" />
+                  <Image src="/image/socialMedia.png" alt="मुख्य बातमी" width={800} height={450} className="rounded-xl w-full h-auto" />
                 </Link>
               </div>
              
@@ -37,35 +37,35 @@ export default function SocialMediaFeed() {
           {/* Right Side - Social Media Text Updates */}
           <div className="flex flex-col gap-4">
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/images/socialFeed/social1.png" alt="अपडेट 1" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social1.png" alt="अपडेट 1" width={80} height={80} className="rounded-lg" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">गेल्या आठवड्यात, आमच्या गुन्हे शाखा युनिट-२ एककाला गुन्हे माहिती...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">२१ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/images/socialFeed/social2.png" alt="अपडेट 2" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social2.png" alt="अपडेट 2" width={80} height={80} className="rounded-lg" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">🌸✨ नाशिकची ऐतिहासिक यंगपंढरी २०२५ ✨🌸</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१९ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/images/socialFeed/social3.png" alt="अपडेट 3" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social3.png" alt="अपडेट 3" width={80} height={80} className="rounded-lg" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">दिशा चालवले किलोमीटर वाढवून माळवी स्टॉप कार अडवून चालकाला...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१६ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/images/socialFeed/social4.png" alt="अपडेट 4" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social4.png" alt="अपडेट 4" width={80} height={80} className="rounded-lg" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">नाशिक शहर पोलिसांकडून अथर्व सावकारांना इशारा आपल्या शहरातील कडकडी</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१५ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/images/socialFeed/social5.png" alt="अपडेट 5" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social5.png" alt="अपडेट 5" width={80} height={80} className="rounded-lg" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">आता कसरतच संप, हा तर रंगाचा भंग – हेदू सांगला मानत, नाही...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१४ मार्च</p>
@@ -113,14 +113,14 @@ export default function SocialMediaFeed() {
 //             <div className="grid grid-cols-2 gap-4">
 //               <div className="col-span-2">
 //                 <Link href="https://www.facebook.com/NashikCityPolice" target="_blank">
-//                   <Image src="/images/social-main.jpg" alt="मुख्य बातमी" width={800} height={450} className="rounded-xl w-full h-auto" />
+//                   <Image src="/image/social-main.jpg" alt="मुख्य बातमी" width={800} height={450} className="rounded-xl w-full h-auto" />
 //                 </Link>
 //               </div>
 //               <Link href="https://www.instagram.com/nashikcitypolice/" target="_blank">
-//                 <Image src="/images/social-left-1.jpg" alt="नियमबद्ध नंबर प्लेट" width={400} height={200} className="rounded-xl w-full h-auto" />
+//                 <Image src="/image/social-left-1.jpg" alt="नियमबद्ध नंबर प्लेट" width={400} height={200} className="rounded-xl w-full h-auto" />
 //               </Link>
 //               <Link href="https://twitter.com/NashikPolice" target="_blank">
-//                 <Image src="/images/social-left-2.jpg" alt="सीटवर प्रवासी बसवू नका" width={400} height={200} className="rounded-xl w-full h-auto" />
+//                 <Image src="/image/social-left-2.jpg" alt="सीटवर प्रवासी बसवू नका" width={400} height={200} className="rounded-xl w-full h-auto" />
 //               </Link>
 //             </div>
 //             <div className="mt-4">

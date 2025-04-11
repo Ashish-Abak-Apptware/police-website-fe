@@ -33,9 +33,9 @@ export const Footer=()=>{
                     <li><Link href="/disclamer">डिस्क्लेमर</Link></li>
                 </ul>
                 <ul className="flex gap-[38px]">
-                    <li><Link href="#"><Image src='/images/social/twitter.png' alt="twitter" width={18} height={18}/></Link></li>
-                    <li><Link href="#"><Image src='/images/social/facebook.png' alt="facebook" width={18} height={18}/></Link></li>
-                    <li><Link href="#"><Image src='/images/social/instagram.png' alt="instagram" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/image/social/twitter.png' alt="twitter" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/image/social/facebook.png' alt="facebook" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/image/social/instagram.png' alt="instagram" width={18} height={18}/></Link></li>
                 </ul>
             </div>
             </section>

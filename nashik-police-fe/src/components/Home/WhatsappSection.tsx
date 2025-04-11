@@ -21,7 +21,7 @@ export default function WhatsappSection() {
             <h1 className="text-4xl">
             पोलीस आयुक्तांचा व्हॉट्सअ‍ॅप नंबर 
             </h1>
-            <p className="flex gap-2 text-2xl items-center"><Image src="/images/whatsapp.png" alt="whatsapp" height={50} width={50}/>९९२३३२३३११</p>
+            <p className="flex gap-2 text-2xl items-center"><Image src="/image/whatsapp.png" alt="whatsapp" height={50} width={50}/>९९२३३२३३११</p>
           </div>
     </section>
     <section className="flex justify-center mx-auto bg-white">

@@ -147,12 +147,12 @@ const config: Config = {
       backgroundImage: {
         'Linear-Yellow-Gradient': 'linear-gradient(180deg,#F9DB01 0%, #F9DB01  100%)',
         'Linear-Black-1-Gradient': 'linear-gradient(180deg,#000000 0%, #000000  100%)',
-        'hero-section-bg': 'url("/images/hero-bg.svg")',
-        'header4-bg':'url("/images/header/header4.png")',
-        'header8-bg':'url("/images/header/header8.png")',
-        'header7-bg':'url("/images/header/header7.svg")',
-        'header-bottom':'url("/images/hero-bottom.svg")',
-        'bg-gradient':'url("/images/bg-gradient.svg")',
+        'hero-section-bg': 'url("/image/hero-bg.svg")',
+        'header4-bg':'url("/image/header/header4.png")',
+        'header8-bg':'url("/image/header/header8.png")',
+        'header7-bg':'url("/image/header/header7.svg")',
+        'header-bottom':'url("/image/hero-bottom.svg")',
+        'bg-gradient':'url("/image/bg-gradient.svg")',
       }
     },
   },

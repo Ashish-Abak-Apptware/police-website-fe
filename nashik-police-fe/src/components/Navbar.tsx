@@ -8,7 +8,7 @@ const Navbar = () => {
             <section className="flex justify-between px-5 h-[65px] bg-white rounded-[15px] xl:w-[1280px]">
             <div className="content-center">
                 <Link href="/">
-                <Image src='/images/PoliceLogo.svg' alt='logo' width={52} height={52}/>
+                <Image src='/image/PoliceLogo.svg' alt='logo' width={52} height={52}/>
                 </Link>
             </div>
             <ul className="flex my-auto text-black gap-16 text-[16px] leading-6 font-normal">
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Link href="/branch">शाखा</Link>
                 </li>
                 <li className='content-center'>
-                    <Image src='/images/NavbarCall.svg' alt='NavbarCall' width={65} height={40}/>
+                    <Image src='/image/NavbarCall.svg' alt='NavbarCall' width={65} height={40}/>
                 </li>
             </ul>
         </section>

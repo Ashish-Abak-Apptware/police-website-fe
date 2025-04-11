@@ -18,7 +18,7 @@ export default function SecurityActivity() {
         </div>
         <div>
           <Image
-            src="/images/security/security1.png"
+            src="/image/security/security1.png"
             alt="Police Officers Working"
             width={600}
             height={400}
@@ -30,7 +30,7 @@ export default function SecurityActivity() {
       <div className="grid md:grid-cols-3 gap-6 mt-10">
         <div className="text-left">
           <Image
-            src="/images/security/security2.png"
+            src="/image/security/security2.png"
             alt="सुरक्षित नाशिक"
             width={400}
             height={250}
@@ -43,7 +43,7 @@ export default function SecurityActivity() {
         </div>
         <div className="text-left">
           <Image
-            src="/images/security/security3.png"
+            src="/image/security/security3.png"
             alt="वॉक विथ पोलिस"
             width={400}
             height={250}
@@ -56,7 +56,7 @@ export default function SecurityActivity() {
         </div>
         <div className="text-left">
           <Image
-            src="/images/security/security4.png"
+            src="/image/security/security4.png"
             alt="सुधारित नाशिक"
             width={400}
             height={250}
