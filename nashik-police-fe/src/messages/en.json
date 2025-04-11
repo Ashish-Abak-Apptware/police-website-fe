@@ -1,0 +1,20 @@
+{
+    "footer":[
+        {
+            "title": "General Information",
+            "list": ["Press Releases", "FAQs", "Gallery", "Senior Officer List", "Divisional ACP", "Police Recruitment", "Disclaimer"]
+        },
+        {
+            "title": "Citizen Guidance",
+            "list": ["Safety Tips", "Citizen Alert Wall", "Initiatives", "Arm License Form", "Illegal Business Information", "Unidentified Dead Bodies", "Useful Websites", "Excavation/Digging", "No Objection Certificate"]
+        },
+        {
+            "title": "Quick Links",
+            "list": ["Tenders", "Online Complaint", "Lost and Found", "Confidential Information"]
+        },
+        {
+            "title": "Important Emergency Contacts",
+            "list": ["Women Helpline: 1091", "Control Room: 100/112", "Senior Citizens: 1090", "Childline: 1098"]
+        }
+    ]
+}
