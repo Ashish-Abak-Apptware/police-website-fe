@@ -37,12 +37,12 @@ export const SearchPoliceStation=()=> {
 
       {/* Filters */}
       <div className="bg-gray-100 p-4 rounded-xl mb-6 flex flex-col gap-4">
-      <div className="flex flex-wrap gap-3 ">
+      <div className="flex justify-between gap-3 ">
         {filters.map((filter) => (
           <div key={filter} className="relative">
             <button
               onClick={() => toggleDropdown(filter)}
-              className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-Natural-Gray-50 text-sm font-medium hover:bg-gray-50"
+              className="flex items-center gap-4 px-8 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-Natural-Gray-50 text-sm font-medium hover:bg-gray-50"
             >
               {filter}
               {selected[filter] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
