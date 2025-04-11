@@ -12,8 +12,8 @@ export const Header = () => {
             height={80}
             width={80}
           />
-          <h1 className="text-5xl leading-18">शासक नाही,सेवक.</h1>
-          <p className="">नवीन ओळख, नवीन अस्तित्व </p>
+          <h1 className="text-5xl leading-18 text-white">शासक नाही,सेवक.</h1>
+          <p className="text-Natural-Gray-100">नवीन ओळख, नवीन अस्तित्व </p>
           <Button child="अजून वाचा" />
         </div>
         <div className="xl:h-[700px] overflow-auto">
@@ -28,7 +28,7 @@ export const Header = () => {
                 className="w-full h-full"
               />
             </div>
-            <div className="flex justify-between w-[226px] h-[100px] rounded-[15px] bg-Grey-70/20 p-5">
+            <div className="flex justify-between w-[226px] h-[100px] rounded-[15px] text-white bg-Grey-70/20 p-5">
               <h5>
                 नियोजित आढावा
                 <br /> बैठक
@@ -55,15 +55,15 @@ export const Header = () => {
               <p>नियोजन करा </p>
             </div>
             <div className="relative flex flex-col gap-2 w-[333px] h-[160px] rounded-[15px] bg-Grey-70/20 p-5">
-              <p>
+              <p className="text-Natural-Gray-50">
                 देवेंद्र फडणवीस <br />
                 नासिक सभा 2025
               </p>
-              <h5>
+              <h5 className="text-Natural-Gray-100">
                 मुख्यमंत्री ७ कलमी <br />
                 १०० दिवसांचा कार्यक्रम
               </h5>
-              <p>अजून वाचा</p>
+              <p className="text-Natural-Gray-50">अजून वाचा</p>
               <Image
                 src="/image/header/header3.png"
                 alt="header3"
@@ -94,9 +94,9 @@ export const Header = () => {
           </div>
           <div className="flex gap-[10px]">
             <div className="w-[237px] h-[130px] rounded-[15px] bg-Grey-70/20 bg-header7-bg bg-no-repeat bg-contain p-5 flex flex-col gap-2">
-              <p>उत्तरा नगर</p>
-              <h5>रहदारी अद्यतन</h5>
-              <p>अजून पहा</p>
+              <p className="text-Natural-Gray-100">उत्तरा नगर</p>
+              <h5 className="text-Natural-Gray-100">रहदारी अद्यतन</h5>
+              <p className="text-Natural-Gray-50">अजून पहा</p>
             </div>
             <div className="flex w-[240px] h-[130px] rounded-[15px] bg-white p-5 text-Primary-Blue-30">
               <div>
@@ -115,7 +115,7 @@ export const Header = () => {
             </div>
           </div>
           <div className="bg-Grey-70/20 w-[488px] h-[123px] rounded-[15px] p-5">
-            <h3>स्वच्छता अभियान</h3>
+            <h3 className="text-white">स्वच्छता अभियान</h3>
             <div className="text-Natural-Gray-50">
               <p>200k</p>
               <p>अभिलेखांचे निदणीकरण</p>

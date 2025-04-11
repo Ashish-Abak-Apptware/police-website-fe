@@ -57,9 +57,9 @@ export const ComplaintSection = () => {
           </p>
         </div>
         {/* functionality */}
-        <div className=" bg-white text-gray-800 p-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className=" bg-white text-gray-800 p-4 flex gap-4">
       {/* Sidebar */}
-      <aside className="md:col-span-1 space-y-6 h-[100%]">
+      <aside className="md:col-span-1 space-y-6">
         <div className="relative">
           <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-500" />
           <Input
@@ -67,18 +67,19 @@ export const ComplaintSection = () => {
             placeholder="येथे शोधा"
           />
         </div>
+        <div className="h-px w-full bg-Natural-Gray-50"></div>
 
         {/* Dropdown Sections */}
         <div>
-            <div className="border-b border-b-Natural-Gray-60 pb-2">
+            <div className="border-b border-b-Natural-Gray-60 pb-5">
           <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold "
+            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg pb-5"
             onClick={() => toggleSection("ऑनलाइन सेवा आणि फॉर्म")}
           >
             ऑनलाइन सेवा आणि फॉर्म {expandedSection === "ऑनलाइन सेवा आणि फॉर्म" ? <ChevronUp /> : <ChevronDown />}
           </button>
           {expandedSection === "ऑनलाइन सेवा आणि फॉर्म" && (
-            <ul className="mt-2 ml-1 text-sm text-gray-800 space-y-1">
+            <ul className="mt-2 ml-1 text-lg text-gray-800 space-y-6">
               <li>ई-चालन भरणा</li>
               <li>हरवलेली व्यक्ती</li>
               <li>फॉर्म डाउनलोड करा</li>
@@ -91,18 +92,18 @@ export const ComplaintSection = () => {
           )}
         </div>
 
-        <div className="border-b border-b-Natural-Gray-60 py-2">
+        <div className="border-b border-b-Natural-Gray-60 py-5">
           <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold"
+            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg"
             onClick={() => toggleSection("लोकप्रिय माहिती")}
           >
             लोकप्रिय माहिती {expandedSection === "लोकप्रिय माहिती" ? <ChevronUp /> : <ChevronDown />}
           </button>
         </div>
 
-        <div className="border-b border-b-Natural-Gray-60 py-2">
+        <div className="border-b border-b-Natural-Gray-60 py-5">
           <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold"
+            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg"
             onClick={() => toggleSection("नवीन काय ?")}
           >
             नवीन काय ? {expandedSection === "नवीन काय ?" ? <ChevronUp /> : <ChevronDown />}
