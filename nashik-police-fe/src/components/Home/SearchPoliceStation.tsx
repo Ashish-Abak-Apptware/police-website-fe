@@ -24,7 +24,7 @@ export const SearchPoliceStation=()=> {
         <h1 className="text-2xl font-bold text-gray-800">
           आपलं पोलिस स्टेशन शोधा
         </h1>
-        <button className="relative px-4 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700">
+        <button className="relative px-4 py-2 bg-Primary-Blue-30 text-white rounded-full shadow hover:bg-blue-700">
           Suggest a Spot
           <span className="absolute -top-2 -right-2 bg-orange-500 text-xs font-bold text-white px-1 rounded-tr-lg rounded-bl-lg">
             AI/ML
