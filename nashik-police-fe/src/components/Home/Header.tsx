@@ -469,7 +469,7 @@ export const Header = () => {
             alt="arrow"
             height={40}
             width={40}
-            className="mt-auto mb-8 xl:mr-5 rotate-180"
+            className="mt-auto mb-8 xl:mb-1 xl:mr-5 rotate-180"
             />
         </div>
       ) : (

@@ -1,9 +1,12 @@
-export const InnerPage=()=> {
+interface InnerPageProps{
+  page?:string;
+}
+export const InnerPage=({page}:InnerPageProps)=> {
     return (
       <div className="flex flex-col justify-center lg:flex-row gap-6 p-6 bg-white text-black mt-[65px]">
         {/* Left/Main Section */}
         <div className="w-full lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold">Lorem ipsum dolor sit amet</h1>
+          <h1 className="text-3xl font-bold">{page}</h1>
           <p className="text-sm text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           </p>
