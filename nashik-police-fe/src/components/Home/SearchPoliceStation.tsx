@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, MenuIcon } from "lucide-react";
+import { AIMLtag } from "../UI/AIMLtag";
 
 const filters = [
   "पोलीस ठाणे",
@@ -9,34 +10,135 @@ const filters = [
   "एसीपी कार्यालय",
   "वाहतूक विभाग",
 ];
+const locations = [
+  "गंगापूर रोड",
+  "सिडको",
+  "नाशिक रोड",
+  "अंबड",
+  "सातपूर",
+  "कॅम्प",
+  "त्र्यंबक रोड",
+  "पंचवटी",
+];
 
 export const SearchPoliceStation=()=> {
   const [selected, setSelected] = useState<{ [key: string]: boolean }>({});
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState<string[]>([]);
 
   const toggleDropdown = (filter: string) => {
     setSelected((prev) => ({ ...prev, [filter]: !prev[filter] }));
   };
 
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setQuery(value);
+    if (value.length > 0) {
+      const matches = locations.filter((loc) =>
+        loc.toLowerCase().includes(value.toLowerCase())
+      );
+      setSuggestions(matches);
+    } else {
+      setSuggestions([]);
+    }
+  };
+
+  const handleSuggestionClick = (text: string) => {
+    setQuery(text);
+    setSuggestions([]);
+  };
   return (
     <section className="flex justify-center bg-white">
         <div className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full px-4 py-[50px]">
+      <div className="xl:flex justify-between mb-10">
+      <div className="">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-gray-800">
           आपलं पोलिस स्टेशन शोधा
         </h1>
-        <button className="relative px-4 py-2 bg-Primary-Blue-30 text-white rounded-full shadow hover:bg-blue-700">
-          Suggest a Spot
-          <span className="absolute -top-2 -right-2 bg-orange-500 text-xs font-bold text-white px-1 rounded-tr-lg rounded-bl-lg">
-            AI/ML
-          </span>
-        </button>
       </div>
+      
       <p className="text-gray-600 mb-4">
         तुम्हाला जवळच्या पोलिस स्टेशनची माहिती मिळवा आणि आवश्यक मदत घ्या.
       </p>
+      </div>
+      <div className=" xl:flex gap-2 max-w-sm mx-auto xl:mx-0 mt-6">
+      {/* Input with AI/ML Ribbon */}
+      <div className="relative">
+        <input
+          type="text"
+          value={query}
+          onChange={handleInputChange}
+          placeholder="येथे टाइप करा"
+          className="w-full border border-Natural-Gray-70 text-Natural-Gray-50 placeholder:text-Natural-Gray-50 rounded-lg px-4 py-4 text-sm outline-none "
+        />
+        <div className="absolute top-0 right-2">
+          <div className="">
+            <AIMLtag/>
+          </div>
+        </div>
+        {/* Suggestions Dropdown */}
+        {suggestions.length > 0 && (
+          <ul className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-md">
+            {suggestions.map((s, i) => (
+              <li
+                key={i}
+                onClick={() => handleSuggestionClick(s)}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm"
+              >
+                {s}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
 
+      {/* Submit Button */}
+      <button className="w-full xl:w-fit bg-Primary-Blue-30 text-Natural-Gray-100 mt-3 xl:mt-0 h-[52px] px-6 rounded-md font-semibold text-sm">
+        पेट्रोलिंग स्पॉट सुचवा
+      </button>
+    </div>
+      </div>
+      {/* Mobile Menu Button */}
+      <div className="xl:hidden space-y-3 mb-4 ">
+        <button
+          onClick={() => toggleDropdown("mobileMenu")}
+          className="flex items-center justify-between gap-2 px-4 py-2 text-Natural-Gray-50 rounded-full border border-Natural-Gray-70 w-full"
+        >
+          येथे आवश्यक कार्यालये फिल्टर करा
+          <MenuIcon color="#03018D" size={20}/>
+          {/* {selected["mobileMenu"] ? <ChevronUp size={16} /> : <ChevronDown size={16} />} */}
+        </button>
+        <p className="text-sm text-gray-600 mb-2">अंबड रोड, नाशिक, महाराष्ट्र ४२२०१०</p>
+      </div>
+      
+      {selected["mobileMenu"] && (
+        <div className="md:hidden bg-gray-100 p-4 rounded-xl mb-6 flex flex-col gap-4">
+          {filters.map((filter) => (
+        <div key={filter} className="relative">
+          <button
+            onClick={() => toggleDropdown(filter)}
+            className="flex items-center gap-4 px-8 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-Natural-Gray-50 text-sm font-medium hover:bg-gray-50"
+          >
+            {filter}
+            {selected[filter] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          </button>
+          {selected[filter] && (
+            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-10">
+          <ul className="text-sm text-gray-700">
+            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">पर्याय 1</li>
+            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">पर्याय 2</li>
+            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">पर्याय 3</li>
+          </ul>
+            </div>
+          )}
+        </div>
+          ))}
+        </div>
+      )}
       {/* Filters */}
-      <div className="bg-gray-100 p-4 rounded-xl mb-6 flex flex-col gap-4">
+      <div className="bg-gray-100 p-4 rounded-xl mb-6 xl:flex xl:flex-col gap-4 hidden ">
       <div className="flex justify-between gap-3 ">
         {filters.map((filter) => (
           <div key={filter} className="relative">

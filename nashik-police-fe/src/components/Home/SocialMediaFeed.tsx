@@ -9,8 +9,8 @@ export default function SocialMediaFeed() {
 
       {/* Social Media Feed Section */}
       <div className="mt-16">
-        <h2 className="text-3xl font-bold mb-2 text-Natural-Gray-20">सोशल मीडिया फीड आणि अपडेट्स</h2>
-        <p className="text-Natural-Gray-20 mb-6">पोलिस विभागाच्या अधिकृत सोशल मीडिया फीडमधील ताज्या घडामोडी आणि महत्वाच्या अपडेट्स मिळवा.</p>
+        <h2 className="xl:text-3xl text-[22px] font-bold mb-2 text-Natural-Gray-20">सोशल मीडिया फीड आणि अपडेट्स</h2>
+        <p className="text-Natural-Gray-20 mb-6 text-sm xl:text-lg">पोलिस विभागाच्या अधिकृत सोशल मीडिया फीडमधील ताज्या घडामोडी आणि महत्वाच्या अपडेट्स मिळवा.</p>
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Left Side - Main Video or Image Block */}
@@ -37,35 +37,35 @@ export default function SocialMediaFeed() {
           {/* Right Side - Social Media Text Updates */}
           <div className="flex flex-col gap-4">
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/image/socialFeed/social1.png" alt="अपडेट 1" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social1.png" alt="अपडेट 1" width={80} height={80} className="rounded-lg xl:w-20 xl:h-20 w-[136px] h-24" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">गेल्या आठवड्यात, आमच्या गुन्हे शाखा युनिट-२ एककाला गुन्हे माहिती...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">२१ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/image/socialFeed/social2.png" alt="अपडेट 2" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social2.png" alt="अपडेट 2" width={80} height={80} className="rounded-lg xl:w-20 xl:h-20 w-[136px] h-24" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">🌸✨ नाशिकची ऐतिहासिक यंगपंढरी २०२५ ✨🌸</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१९ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/image/socialFeed/social3.png" alt="अपडेट 3" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social3.png" alt="अपडेट 3" width={80} height={80} className="rounded-lg xl:w-20 xl:h-20 w-[136px] h-24" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">दिशा चालवले किलोमीटर वाढवून माळवी स्टॉप कार अडवून चालकाला...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१६ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/image/socialFeed/social4.png" alt="अपडेट 4" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social4.png" alt="अपडेट 4" width={80} height={80} className="rounded-lg xl:w-20 xl:h-20 w-[136px] h-24" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">नाशिक शहर पोलिसांकडून अथर्व सावकारांना इशारा आपल्या शहरातील कडकडी</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१५ मार्च</p>
               </div>
             </Link>
             <Link href="#" target="_blank" className="flex gap-2">
-              <Image src="/image/socialFeed/social5.png" alt="अपडेट 5" width={80} height={80} className="rounded-lg" />
+              <Image src="/image/socialFeed/social5.png" alt="अपडेट 5" width={80} height={80} className="rounded-lg xl:w-20 xl:h-20 w-[136px] h-24" />
               <div>
                 <p className="text-sm font-medium text-Natural-Gray-50">आता कसरतच संप, हा तर रंगाचा भंग – हेदू सांगला मानत, नाही...</p>
                 <p className="text-xs text-Natural-Gray-70 mt-1">१४ मार्च</p>
