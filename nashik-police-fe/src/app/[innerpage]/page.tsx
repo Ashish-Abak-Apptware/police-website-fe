@@ -1,15 +1,12 @@
 import { InnerPage } from "@/components/InnerPage";
 import Navbar from "@/components/Navbar";
 
-export function generateStaticParams() {
-  return [{ }];
-}
-export default function InnerPageParam({ params }: { params: { innerpage: string } }) {
+export default async function InnerPageParam({ params }:any) {
   const innerpage = decodeURIComponent(params.innerpage);
   return (
     <>
     <Navbar/>
-    <InnerPage/>
+    <InnerPage page={innerpage}/>
     </>
   );
 }
