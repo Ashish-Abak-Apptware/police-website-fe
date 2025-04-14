@@ -17,8 +17,8 @@ export default function WhatsappSection() {
 
   return (
     <>
-    <section className="flex justify-center bg-white">
-    <div className="bg-bg-gradient xl:flex xl:flex-row flex flex-col gap-5 justify-between items-center xl:py-[55px] py-8 xl:px-[100px] xl:w-[1280px] md:w-[768px] w-full">
+    <section className="flex justify-center bg-bg-gradient">
+    <div className=" md:flex md:flex-row flex flex-col gap-5 justify-between items-center xl:py-[55px] py-8 xl:px-[100px] md:px-10 xl:w-[1280px] md:w-[768px] w-full">
             <h1 className="xl:text-4xl text-xl text-white">
             पोलीस आयुक्तांचा व्हॉट्सअ‍ॅप नंबर 
             </h1>
@@ -83,10 +83,44 @@ export default function WhatsappSection() {
         </ResponsiveContainer>
       </div>
       {/* Bar Chart for mobile*/}
-      <div className="bg-Primary-Blue-100 p-6 rounded-2xl w-full h-[553px] block xl:hidden">
+      <div className="bg-Primary-Blue-100 p-6 rounded-2xl w-full h-[553px] block md:hidden">
         <h2 className="text-lg text-Natural-Gray-50 mb-4">व्हॉट्सअ‍ॅपवरील एकूण संदेश</h2>
         <ResponsiveContainer width="100%" height="90%">
           <BarChart data={data} barSize={30}>
+            <XAxis dataKey="name" tick={{ fill: "#7D7D7D", fontSize: 12 }} />
+            <YAxis hide />
+            <Tooltip contentStyle={{
+            backgroundColor: "#7D7D7D",
+            border: "1px solid #ddd",
+            fill:"#000",
+            fontSize: "12px",
+          }}/>
+            <Bar dataKey="value" fill="#C3C2FE" radius={[8, 8, 0, 0]} 
+             onMouseEnter={(_, index) => setHoveredIndex(index)}
+             onMouseLeave={() => setHoveredIndex(null)}
+             // Override fill color conditionally
+             shape={(props:any) => {
+               const { x, y, width, height, index } = props;
+               const fillColor = index === hoveredIndex ? "#6A5ACD" : "#C3C2FE"; // hover color
+               return (
+                <rect
+                  x={x}
+                  y={y}
+                  width={width}
+                  height={height}
+                  fill={fillColor}
+                />
+              );
+            }}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      {/* Bar Chart for tab*/}
+      <div className="bg-Primary-Blue-100 p-6 rounded-2xl w-[470px] h-[440px] md:block xl:hidden hidden">
+        <h2 className="text-lg text-Natural-Gray-50 mb-4">व्हॉट्सअ‍ॅपवरील एकूण संदेश</h2>
+        <ResponsiveContainer width="100%" height="90%">
+          <BarChart data={data} barSize={50}>
             <XAxis dataKey="name" tick={{ fill: "#7D7D7D", fontSize: 12 }} />
             <YAxis hide />
             <Tooltip contentStyle={{

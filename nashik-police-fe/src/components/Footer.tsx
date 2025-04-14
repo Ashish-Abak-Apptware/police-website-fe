@@ -17,7 +17,7 @@ export const Footer=()=>{
     return(
         <footer className="bg-white flex justify-center">
             <section className="w-full md:w-[768px] xl:w-[1280px] xl:px-[100px] xl:pt-[100px] px-4 py-8">
-                <div className="grid xl:grid-cols-9 grid-cols-3 space-y-4 mb-16">
+                <div className="grid md:grid-cols-9 grid-cols-3 space-y-4 mb-16">
                     {sponcers.map((each,index)=>(
                         <Image key={index} src={each} alt={each} height={100} width={100} className="w-fit xl:h-[40px] h-7 mx-auto"/>
                     ))}
@@ -26,7 +26,7 @@ export const Footer=()=>{
                 <p className="text-Primary-Blue-30 xl:text-2xl text-sm font-bold">नाशिक शहर पोलिस</p>
                 <p className="text-Natural-Gray-70 xl:text-2xl text-sm">नवीन ओळख, नवीन अस्तित्व </p>
             </div>
-            <div className="xl:flex grid grid-cols-2 space-y-6 justify-between py-10">
+            <div className="md:flex grid grid-cols-2 space-y-6 justify-between py-10">
                 {footer.map((each,index)=>(
                     <ul key={index} className="flex flex-col gap-3 text-[16px] ">
                     <li className="text-[#303030] xl:text-2xl font-semibold text-wrap">{each.title}</li>
@@ -40,10 +40,10 @@ export const Footer=()=>{
             
             </div>
             <div className="h-px bg-Natural-Gray-80"></div>
-            <div className="xl:flex space-y-5 xl:space-y-0 text-center justify-between pt-10 xl:pb-16 text-[#03018D]">
+            <div className="md:flex space-y-5 xl:space-y-0 text-center justify-between pt-10 xl:pb-16 text-[#03018D]">
                 {/* <p>&copy; {new Date().getFullYear()} Nashik City Police</p> */}
                 <p>कॉपीराईट © २०२५ नाशिक शहर पोलिस</p>
-                <ul className="xl:flex gap-[38px] text-[16px] space-y-5 xl:space-y-0">
+                <ul className="md:flex gap-[38px] text-[16px] space-y-5 xl:space-y-0">
                     <li><Link href="/sitemap">साइटमॅप</Link></li>
                     <li><Link href="/disclamer">डिस्क्लेमर</Link></li>
                 </ul>

@@ -14,7 +14,7 @@ export default function SecurityActivity() {
             alt="Police Officers Working"
             width={600}
             height={400}
-            className="rounded-xl xl:hidden pb-5"
+            className="rounded-xl md:hidden pb-5"
           />
         </div>
           <p className="xl:text-lg text-sm font-medium mb-4 text-Natural-Gray-20">
@@ -31,7 +31,7 @@ export default function SecurityActivity() {
             alt="Police Officers Working"
             width={600}
             height={400}
-            className="rounded-xl xl:block hidden"
+            className="rounded-xl md:block hidden"
           />
         </div>
       </div>
