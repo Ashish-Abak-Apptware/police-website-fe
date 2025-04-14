@@ -7,22 +7,22 @@ export const HelpSection=()=>{
                     <p className="text-H6-Medium-Khand">समाजाच्या सुरक्षिततेसाठी आणि सुव्यवस्थेसाठी अनेक महत्त्वाची कामे पार पाडतात. त्यांची जबाबदारी विविध क्षेत्रांमध्ये विस्तारलेली आहे.</p>
                 </div>
                 <div className="">
-                    <div className="xl:flex xl:flex-row flex flex-col xl:divide-y-0 divide-y-1 divide-Natural-Gray-80 gap-5 xl:gap-0 xl:border-b xl:border-b-Natural-Gray-40">
-                        <div className="flex xl:gap-1 gap-2 text-Primary-Blue-30 px-5 xl:w-[40%] w-full pb-5 xl:pb-0">
-                            <h1 className="xl:text-8xl text-4xl xl:mt-5">2025</h1>
-                            <p className="xl:text-2xl text-sm h-[50%] xl:mt-auto xl:mb-5">गुन्हे नोंद <br/>तपासाखालील गुन्हे</p>
+                    <div className="md:flex md:flex-row flex flex-col md:divide-y-0 divide-y-1 divide-Natural-Gray-80 gap-5 md:gap-0 md:border-b md:border-b-Natural-Gray-40">
+                        <div className="flex md:gap-1 gap-2 text-Primary-Blue-30 px-5 md:px-2 xl:px-5 md:w-[40%] w-full pb-5 xl:pb-0">
+                            <h1 className="xl:text-8xl md:text-6xl text-4xl md:mt-5">2025</h1>
+                            <p className="xl:text-2xl md:text-lg text-sm h-[50%] md:mt-auto md:mb-5">गुन्हे नोंद <br/>तपासाखालील गुन्हे</p>
                         </div>
-                        <div className="xl:px-10 xl:pt-10 xl:pb-5 p-5 mb-5 xl:mb-0 text-white bg-bg-gradient bg-no-repeat bg-cover rounded-2xl flex gap-5 xl:w-[60%] w-full">
-                            <h1 className="xl:text-3xl text-lg">Nashik पोलिसांच्या <br/>प्रतिसादाने समाधानी</h1>
-                            <p className="xl:text-4xl text-lg content-end font-bold">८५% नागरिक</p>
+                        <div className="xl:px-10 md:pt-10 md:pb-5 p-5 mb-5 md:mb-0 text-white bg-bg-gradient bg-no-repeat bg-cover rounded-2xl flex gap-5 md:w-[60%] w-full">
+                            <h1 className="xl:text-3xl md:text-xl text-lg">Nashik पोलिसांच्या <br/>प्रतिसादाने समाधानी</h1>
+                            <p className="md:text-4xl text-lg content-end font-bold">८५% नागरिक</p>
                         </div>
                     </div>
-                    <div className="xl:flex xl:flex-row grid grid-cols-2 justify-between">
-                        <div className="text-Primary-Blue-30 p-5 border-r border-y xl:border-y-0 border-r-Natural-Gray-50 border-y-Natural-Gray-50">
+                    <div className="md:flex md:flex-row grid grid-cols-2 justify-between">
+                        <div className="text-Primary-Blue-30 p-5 border-r border-y md:border-y-0 border-r-Natural-Gray-50 border-y-Natural-Gray-50">
                             <h1 className="xl:text-[40px] text-xl">८०% तपास पूर्ण</h1>
                             <p className="xl:text-3xl text-sm">गंभीर गुन्ह्यांवरील</p>
                         </div>
-                        <div className="text-Primary-Blue-30 p-5 border-y xl:border-r xl:border-r-Natural-Gray-50 xl:border-y-0 border-y-Natural-Gray-50">
+                        <div className="text-Primary-Blue-30 p-5 border-y md:border-r md:border-r-Natural-Gray-50 md:border-y-0 border-y-Natural-Gray-50">
                             <h1 className="xl:text-[40px] text-xl">९२% हरवलेल्या व्यक्ती</h1>
                             <p className="xl:text-3xl text-sm">४८ तासांत शोधल्या</p>
                         </div>

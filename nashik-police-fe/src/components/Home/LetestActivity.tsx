@@ -9,7 +9,7 @@ export default function LatestActivity() {
         <h2 className="text-3xl font-bold mb-2 text-white inline-block py-2 rounded">अलीकडील घडामोडी</h2>
         <p className="text-gray-200 mb-6 mt-2">पोलिस दलात झालेल्या घडामोडींची येथे अत्यंत उत्साही घटनांची माहिती घ्या</p>
           {/* grid for web */}
-        <div className="xl:flex justify-between xl:px-8 gap-4 hidden">
+        <div className="md:flex justify-between xl:px-8 gap-4 hidden">
             {/* first column */}
           <div className="flex flex-col gap-4">
           <div className="">
@@ -65,7 +65,7 @@ export default function LatestActivity() {
           </div>
         </div>
         {/* grid for mobile */}
-        <div className="xl:hidden flex justify-between xl:px-8 gap-4 ">
+        <div className="md:hidden flex justify-between xl:px-8 gap-4 ">
             {/* first column */}
           <div className="flex flex-col gap-4">
           <div className="">
@@ -105,14 +105,14 @@ export default function LatestActivity() {
           
         </div>
         {/* second row */}
-        <div className="flex flex-col gap-4 mt-2 xl:hidden">
+        <div className="flex flex-col gap-4 mt-2 md:hidden">
           <div>
             <Image src="/image/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={343} height={194} className="rounded-xl w-[343px] h-[194px]" />
             <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
             {/* third row */}
-        <div className="flex gap-4 mt-2 xl:hidden">
+        <div className="flex gap-4 mt-2 md:hidden">
         <div className="">
             <Image src="/image/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={166} height={261} className="rounded-xl w-[166px] h-[261px]" />
             <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>

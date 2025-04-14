@@ -32,21 +32,21 @@ const Navbar = () => {
                     </div>
                     <div className={`absolute md:static top-[65px] left-0 w-full my-auto  bg-white flex flex-col justify-between ${isMenuOpen?'flex h-screen pb-20 px-4':'md:flex hidden'}`}>
                     <ul
-                    className={`flex divide-y-2 xl:divide-y-0 divide-Natural-Gray-70 md:flex flex-col md:flex-row md:justify-end text-Natural-Gray-50 pt-5 md:pt-0 gap-8 xl:gap-16 text-[16px] leading-6 font-normal  md:bg-transparent`}
+                    className={`flex divide-y-2 md:divide-y-0 divide-Natural-Gray-70 md:flex flex-col md:flex-row md:justify-end text-Natural-Gray-50 pt-5 md:pt-0 gap-8 xl:gap-16 text-[16px] leading-6 font-normal  md:bg-transparent`}
                 >
-                    <li className='content-center pb-4 xl:pb-0'>
+                    <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">आमच्या बद्दल</Link>
                     </li>
-                    <li className='content-center pb-4 xl:pb-0'>
+                    <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">सिटीझन कॉर्नर</Link>
                     </li>
-                    <li className='content-center pb-4 xl:pb-0'>
+                    <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">पोलिस कॉर्नर</Link>
                     </li>
-                    <li className='content-center pb-4 xl:pb-0'>
+                    <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">आम्हाला कळवा</Link>
                     </li>
-                    <li className='content-center pb-4 xl:pb-0'>
+                    <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">शाखा</Link>
                     </li>
                     <li className='content-center md:block hidden'>

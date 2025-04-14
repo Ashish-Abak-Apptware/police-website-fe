@@ -51,7 +51,7 @@ export const SearchPoliceStation=()=> {
   return (
     <section className="flex justify-center bg-white">
         <div className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full px-4 py-[50px]">
-      <div className="xl:flex justify-between mb-10">
+      <div className="md:flex justify-between mb-10">
       <div className="">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-gray-800">
@@ -59,11 +59,11 @@ export const SearchPoliceStation=()=> {
         </h1>
       </div>
       
-      <p className="text-gray-600 mb-4">
+      <p className="text-gray-600 mb-4 md:w-[300px] xl:w-auto">
         तुम्हाला जवळच्या पोलिस स्टेशनची माहिती मिळवा आणि आवश्यक मदत घ्या.
       </p>
       </div>
-      <div className=" xl:flex gap-2 max-w-sm mx-auto xl:mx-0 mt-6">
+      <div className=" md:flex gap-2 max-w-sm mx-auto xl:mx-0 mt-6">
       {/* Input with AI/ML Ribbon */}
       <div className="relative">
         <input
@@ -95,7 +95,7 @@ export const SearchPoliceStation=()=> {
       </div>
 
       {/* Submit Button */}
-      <button className="w-full xl:w-fit bg-Primary-Blue-30 text-Natural-Gray-100 mt-3 xl:mt-0 h-[52px] px-6 rounded-md font-semibold text-sm">
+      <button className="w-full md:w-fit bg-Primary-Blue-30 text-Natural-Gray-100 mt-3 md:mt-0 h-[52px] px-6 rounded-md font-semibold text-sm">
         पेट्रोलिंग स्पॉट सुचवा
       </button>
     </div>
@@ -114,7 +114,7 @@ export const SearchPoliceStation=()=> {
       </div>
       
       {selected["mobileMenu"] && (
-        <div className="md:hidden bg-gray-100 p-4 rounded-xl mb-6 flex flex-col gap-4">
+        <div className="xl:hidden bg-gray-100 p-4 rounded-xl mb-6 flex flex-col gap-4">
           {filters.map((filter) => (
         <div key={filter} className="relative">
           <button

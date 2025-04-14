@@ -63,7 +63,7 @@ export const ComplaintSection = () => {
           </p>
         </div>
         {/* functionality */}
-        <div className=" bg-white text-gray-800 xl:p-4 xl:flex xl:flex-row flex flex-col-reverse gap-4">
+        <div className=" bg-white text-gray-800 xl:p-4 xl:flex xl:flex-row flex flex-col-reverse gap-4 md:gap-10 xl:gap-4">
       {/* Sidebar */}
       <aside className="md:col-span-1 space-y-6 xl:space-y-0">
         <div className="relative">
@@ -101,12 +101,12 @@ export const ComplaintSection = () => {
       </aside>
 
       {/* Grid of Services */}
-      <main className="xl:flex xl:flex-row flex flex-col xl:gap-5 gap-[10px]">
+      <main className="md:flex md:flex-row flex flex-col xl:gap-5 gap-[10px]">
          <div className="flex flex-col xl:gap-5 gap-[10px]">
-         <div className="xl:flex xl:flex-row flex flex-col xl:gap-5 gap-[10px]">
-          <div className="xl:flex xl:flex-col flex  xl:gap-5 gap-[10px]">
+         <div className="md:flex md:flex-row flex flex-col md:gap-5 gap-[10px]">
+          <div className="md:flex md:flex-col flex  md:gap-5 gap-[10px]">
           <div
-            className="relative xl:w-[172px] xl:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[172px] md:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint1.png'
@@ -120,7 +120,7 @@ export const ComplaintSection = () => {
             </div>
           </div>
           <div
-            className="relative xl:w-[172px] xl:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[172px] md:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint1.png'
@@ -134,10 +134,10 @@ export const ComplaintSection = () => {
             </div>
           </div>
           </div>
-          <div className="flex flex-col xl:gap-5 gap-[10px]">
-          <div className="flex xl:gap-5 gap-[10px]">
+          <div className="flex flex-col md:gap-5 gap-[10px]">
+          <div className="flex md:gap-5 gap-[10px]">
           <div
-            className="relative xl:w-[153px] w-[166px] xl:h-fit h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[153px] w-[166px] md:h-fit h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src="/image/complaints/complaint4.png"
@@ -150,9 +150,9 @@ export const ComplaintSection = () => {
               हरवलेली किंवा सापडलेली माहिती नोंदवा
             </div>
           </div>
-          <Link href="https://www.ceir.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" className="xl:w-[153px] xl:h-fit w-[166px] h-[232px]">
+          <Link href="https://www.ceir.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" className="md:w-[153px] md:h-fit w-[166px] h-[232px]">
           <div
-            className="relative xl:w-[153px] xl:h-fit w-[166px] h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[153px] md:h-fit w-[166px] h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint3.png'
@@ -169,7 +169,7 @@ export const ComplaintSection = () => {
           </div>
           <Link href="https://cybercrime.gov.in/Webform/Accept.aspx" target="_blank">
           <div
-            className="relative xl:w-[330px] xl:h-[330px] w-full h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[330px] md:h-[330px] w-full h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint5.png'
@@ -186,10 +186,10 @@ export const ComplaintSection = () => {
           </div>
           </div>
           
-          <div className="flex xl:hidden xl:gap-5 gap-[10px] w-full">
+          <div className="flex md:hidden md:gap-5 gap-[10px] w-full">
           <Link href="https://cybercrime.gov.in/Webform/Accept.aspx" target="_blank">
           <div
-            className="relative xl:w-[180px] xl:h-[319px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[180px] md:h-[319px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint2.png'
@@ -205,7 +205,7 @@ export const ComplaintSection = () => {
           </Link>
           <Link href={'https://cybercrime.gov.in/Webform/Accept.aspx'} target="_blank">
           <div
-            className="relative xl:w-[180px] xl:h-[390px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[180px] md:h-[390px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint6.png'
@@ -221,7 +221,7 @@ export const ComplaintSection = () => {
           </Link>
           </div>
           <div
-            className="relative xl:w-[530px] w-full h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[530px] w-full h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint7.png'
@@ -236,7 +236,7 @@ export const ComplaintSection = () => {
           </div>
          </div>
          {/* for web */}
-          <div className="xl:flex xl:flex-col hidden gap-5">
+          <div className="md:flex md:flex-col hidden gap-5">
           <Link href={"https://cybercrime.gov.in/Webform/Accept.aspx"} target="_blank">
           <div
             className="relative w-[180px] h-[319px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"

@@ -22,10 +22,10 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-center bg-white mt-[65px] mb-8 px-4 md:px-0">
-      <section className="relative xl:flex xl:flex-row flex flex-col xl:gap-[158px] md:justify-center bg-hero-section-mobile-bg md:bg-hero-section-bg bg-no-repeat bg-contain xl:w-[1248px] xl:pt-5 xl:h-[730px] w-[100%] h-[1100px] px-4 pt-4">
+    <header className="flex justify-center bg-white mt-[65px] mb-8 px-4 xl:px-0">
+      <section className="relative md:flex md:flex-row flex flex-col xl:gap-[158px] md:justify-center bg-hero-section-mobile-bg md:bg-hero-section-bg bg-no-repeat bg-contain xl:w-[1248px] md:w-[768px] xl:pt-5 xl:h-[730px] md:h-[500px] w-[100%] h-[1100px] px-4 pt-4">
         {/* left content */}
-        <div className="xl:w-[311px] justify-center flex flex-col gap-3 md:pb-40 pb-10">
+        <div className="xl:w-[311px] justify-center flex flex-col gap-3 xl:pb-40 md:pb-[200px] pb-10 md:pl-18 xl:pl-0">
           <Image
             src="/image/header/header6.png"
             alt="logo"
@@ -33,7 +33,7 @@ export const Header = () => {
             width={80}
             className="xl:w-20 xl:h-20 w-12 h-12"
           />
-          <h1 className="xl:text-5xl text-[44px] leading-18 text-white">शासक नाही, सेवक.</h1>
+          <h1 className="xl:text-5xl text-[44px] md:text-[32px] leading-18 md:leading-10 xl:leading-18 text-white">शासक नाही, सेवक.</h1>
           <p className="text-Natural-Gray-100">नवीन ओळख, नवीन अस्तित्व </p>
           <Button child="अजून वाचा" />
         </div>
@@ -41,7 +41,7 @@ export const Header = () => {
         <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="xl:h-[700px] xl:overflow-y-scroll overflow-x-scroll xl:block hidden">
+        className="xl:h-[700px] md:h-[400px] xl:overflow-y-scroll overflow-x-scroll md:block hidden">
         <div
     className={`flex flex-col gap-[10px] px-4 xl:w-[520px] animate-scroll ${
       isHovered ? 'pause' : ''
@@ -88,21 +88,21 @@ export const Header = () => {
             </div>
             </Link>
             <div className="relative flex flex-col gap-2 w-[333px] h-[160px] rounded-[15px] bg-Grey-70/20 p-5">
-              <p className="text-Natural-Gray-50">
+              <p className="text-Natural-Gray-50 xl:text-[16px] md:text-sm">
                 देवेंद्र फडणवीस <br />
                 नासिक सभा 2025
               </p>
-              <h5 className="text-Natural-Gray-100">
+              <h5 className="text-Natural-Gray-100 xl:text-[16px] md:text-sm">
                 मुख्यमंत्री ७ कलमी <br />
                 १०० दिवसांचा कार्यक्रम
               </h5>
-              <p className="text-Natural-Gray-50">अजून वाचा</p>
+              <p className="text-Natural-Gray-50 xl:text-[16px] md:text-sm">अजून वाचा</p>
               <Image
                 src="/image/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
-                className="absolute right-0 bottom-0 w-[180px] h-[220px]"
+                className="absolute right-0 bottom-0 xl:w-[180px] xl:h-[220px] md:w-[120px] md:h-[180px]"
               />
             </div>
           </div>
@@ -215,21 +215,21 @@ export const Header = () => {
             </div>
             </Link>
             <div className="relative flex flex-col gap-2 w-[333px] h-[160px] rounded-[15px] bg-Grey-70/20 p-5">
-              <p className="text-Natural-Gray-50">
+              <p className="text-Natural-Gray-50 xl:text-[16px] md:text-sm">
                 देवेंद्र फडणवीस <br />
                 नासिक सभा 2025
               </p>
-              <h5 className="text-Natural-Gray-100">
+              <h5 className="text-Natural-Gray-100 xl:text-[16px] md:text-sm">
                 मुख्यमंत्री ७ कलमी <br />
                 १०० दिवसांचा कार्यक्रम
               </h5>
-              <p className="text-Natural-Gray-50">अजून वाचा</p>
+              <p className="text-Natural-Gray-50 xl:text-[16px] md:text-sm">अजून वाचा</p>
               <Image
                 src="/image/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
-                className="absolute right-0 bottom-0 w-[180px] h-[220px]"
+                className="absolute right-0 bottom-0 xl:w-[180px] xl:h-[220px] md:w-[120px] md:h-[180px]"
               />
             </div>
           </div>
@@ -306,7 +306,7 @@ export const Header = () => {
         <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-         className="h-fit  overflow-auto w-full xl:hidden">
+         className="h-fit  overflow-auto w-full md:hidden">
         <div className={`flex gap-[10px] animate-scroll-right ${
       isHovered ? 'pause' : ''
     }`}>
@@ -455,21 +455,21 @@ export const Header = () => {
           />
           )}
 
-        <div className="absolute md:bottom-0 -bottom-[30px] left-0 z-40">
+        <div className="absolute xl:bottom-0 md:bottom-[52px] -bottom-[30px] left-0 z-40">
       {/* Minimized button */}
       {!isOpen ? (
         <div
           onClick={toggleChat}
-          className=" p-3 px-5 bg-chatbot-bg bg-contain bg-no-repeat md:w-[350px] md:h-[140px] w-[250px] h-[140px] flex justify-between items-center gap-2 cursor-pointer relative z-50"
+          className=" p-3 px-5 bg-chatbot-bg bg-contain bg-no-repeat xl:w-[350px] xl:h-[140px] md:w-[200px] md:h-[100px] w-[250px] h-[140px] flex justify-between items-center gap-2 cursor-pointer relative z-50"
         >
-          <div className="absolute xl:top-0 xl:left-32 -top-2 left-20 xl:scale-100 scale-75 text-[10px] px-1 rounded-sm"><AIMLtag/></div>
-          <Image src="/image/chatbot-avatar.svg" alt="Chatbot" width={200} height={200} className="absolute md:-top-[180px] -top-[150px] -left-8 md:-left-6 md:w-[180px] md:h-[180px] w-[150px] h-[150px]"/>
-          <p className="text-Primary-Blue-30 font-bold text-lg md:w-[120px]">आपला हक्काचा सहायक</p>
+          <div className="absolute xl:top-0 xl:left-32 md:left-14 -top-2 left-20 xl:scale-100 scale-75 text-[10px] px-1 rounded-sm"><AIMLtag/></div>
+          <Image src="/image/chatbot-avatar.svg" alt="Chatbot" width={200} height={200} className="absolute xl:-top-[180px] -top-[150px] -left-8 md:-left-6 xl:w-[180px] xl:h-[180px] w-[150px] h-[150px]"/>
+          <p className="text-Primary-Blue-30 font-bold text-lg xl:text-[21px] md:text-sm  md:w-[120px] xl:w-[150px] xl:pt-6">आपला हक्काचा सहायक</p>
           <Image src="/image/header/arrow.svg"
             alt="arrow"
             height={40}
             width={40}
-            className="mt-auto mb-8 xl:mb-1 xl:mr-5 rotate-180"
+            className="mt-auto mb-8 xl:mb-1 md:mb-2 md:-mr-2 xl:mr-5 rotate-180"
             />
         </div>
       ) : (
