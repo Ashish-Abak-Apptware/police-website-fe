@@ -5,11 +5,11 @@ export default function LatestActivity() {
     <section className="flex justify-center bg-bg-gradient bg-cover">
         <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] py-[50px] w-full px-4">
 
-        <div className="mt-16">
+        <div className="">
         <h2 className="text-3xl font-bold mb-2 text-white inline-block py-2 rounded">अलीकडील घडामोडी</h2>
         <p className="text-gray-200 mb-6 mt-2">पोलिस दलात झालेल्या घडामोडींची येथे अत्यंत उत्साही घटनांची माहिती घ्या</p>
-
-        <div className="flex justify-between px-8 gap-4">
+          {/* grid for web */}
+        <div className="xl:flex justify-between xl:px-8 gap-4 hidden">
             {/* first column */}
           <div className="flex flex-col gap-4">
           <div className="">
@@ -63,10 +63,72 @@ export default function LatestActivity() {
             <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
+        </div>
+        {/* grid for mobile */}
+        <div className="xl:hidden flex justify-between xl:px-8 gap-4 ">
+            {/* first column */}
+          <div className="flex flex-col gap-4">
+          <div className="">
+            <Image src="/image/activity/activity1.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div>
+            <Image src="/image/activity/activity4.png" alt="प्रसंग तपशील येथे आहे" width={166} height={300} className="rounded-xl w-[166px] h-[282px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div>
+            <Image src="/image/activity/activity11.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
           
+          </div>
+          {/* second column */}
+          <div className="flex flex-col gap-4">
+          <div className="">
+            <Image src="/image/activity/activity2.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div>
+            <Image src="/image/activity/activity3.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div className="">
+            <Image src="/image/activity/activity5.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div>
+            <Image src="/image/activity/activity6.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
           
+          </div>
           
         </div>
+        {/* second row */}
+        <div className="flex flex-col gap-4 mt-2 xl:hidden">
+          <div>
+            <Image src="/image/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={343} height={194} className="rounded-xl w-[343px] h-[194px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          </div>
+            {/* third row */}
+        <div className="flex gap-4 mt-2 xl:hidden">
+        <div className="">
+            <Image src="/image/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={166} height={261} className="rounded-xl w-[166px] h-[261px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div className="">
+          <div>
+            <Image src="/image/activity/activity8.png" alt="प्रसंग तपशील येथे आहे" width={166} height={105} className="rounded-xl w-[166px] h-[105px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          <div>
+            <Image src="/image/activity/activity10.png" alt="प्रसंग तपशील येथे आहे" width={166} height={126} className="rounded-xl w-[166px] h-[126px]" />
+            <p className="text-sm text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
+          </div>
+          </div>
+          </div>
+        
 
         <div className="flex justify-center mt-6">
           <button className="bg-white text-blue-900 px-5 py-2 rounded font-semibold border border-blue-900">अधिक वाचा</button>

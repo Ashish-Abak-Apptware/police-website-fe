@@ -2,40 +2,46 @@
 import { ChevronDown, ChevronUp, Search } from "lucide-react";
 import { useState } from "react";
 import Input from "../UI/InputField";
+import Link from "next/link";
 
-const services = [
+const sections = [
   {
-    title: "ऑनलाइन गुन्‍हेाची नोंद करा",
-    image: "/image/complaints/complaint1.png",
+    section: "ऑनलाइन सेवा आणि फॉर्म",
+    items: [
+      { title: "ई-चालन भरणा", link: "https://mahatrafficechallan.gov.in/payechallan/PaymentService.htm?_qc=394b48c0ac472078ffbc1bda62f51712" },
+      { title: "हरवलेली व्यक्ती", link: "https://citizen.mahapolice.gov.in/Citizen/MH/SearchView.aspx" },
+      { title: "फॉर्म डाउनलोड करा", link: "https://citizen.mahapolice.gov.in/Citizen/MH/Download.aspx" },
+      { title: "अनोळखी मृतदेह", link: "https://citizen.mahapolice.gov.in/Citizen/MH/SearchDeadBodyList.aspx" },
+      { title: "प्रथम खबरी अहवाल", link: "https://citizen.mahapolice.gov.in/Citizen/MH/PublishedFIRs.aspx" },
+      { title: "पोलीस पडताळणी सेवा", link: "https://pcs.mahaonline.gov.in/Forms/Home.aspx" },
+      { title: "अटक करण्यात आलेले आरोपी", link: "https://citizen.mahapolice.gov.in/Citizen/MH/SearcgAccusedArrest.aspx" },
+      { title: "नागरिक पोर्टल", link: "https://citizen.mahapolice.gov.in/Citizen/MH/index.aspx" },
+    ],
   },
   {
-    title: "हरवलेली किंवा सापडलेली माहिती नोंदवा",
-    image: "/image/complaints/complaint4.png",
+    section: "लोकप्रिय माहिती",
+    items: [
+      { title: "नॅशनल सायबर क्राईम रिपोर्टिंग पोर्टल", link: "https://cybercrime.gov.in/" },
+      { title: "सायबर अलर्ट वॉल", link: "/cyber-alert-wall" },
+      { title: "पोलीस स्टेशन प्रभारी", link: "/info/police-station-incharge" },
+      { title: "उपक्रम", link: "/info/initiatives" },
+      { title: "निविदा", link: "/info/tenders" },
+      { title: "पोलीस भरती", link: "/info/police-recruitment" },
+      { title: "उपयुक्त वेबसाइट्स", link: "/info/useful-websites" },
+    ],
   },
   {
-    title: "चोरलेला/हरवलेला मोबाइल ब्लॉक करा",
-    image: "/image/complaints/complaint3.png",
-  },
-  {
-    title: "आर्थिक फसवणुकीची तक्रार नोंदवा",
-    image: "/image/complaints/complaint2.png",
-  },
-  {
-    title: "भाडेकरू माहिती नोंदवा",
-    image: "/image/complaints/complaint1.png",
-  },
-  {
-    title: "महिला/मुलांवरील गुन्‍हेाची तक्रार नोंदवा",
-    image: "/image/complaints/complaint5.png",
-    highlight: true,
-  },
-  {
-    title: "हरवलेल्या मोबाइलची सूचना",
-    image: "/image/complaints/complaint7.png",
-  },
-  {
-    title: "इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा",
-    image: "/image/complaints/complaint6.png",
+    section: "नवीन काय ?",
+    items: [
+      { title: "पोलीस उप आयुक्त भेट", link: "/news/deputy-commissioner-visit" },
+      { title: "माहितीचा अधिकार", link: "/news/right-to-information" },
+      { title: "प्रसिद्धी पत्रक", link: "/news/press-releases" },
+      { title: "परिपत्रक", link: "/news/circulars" },
+      { title: "सामुहिक हिंसा", link: "/news/mass-violence" },
+      { title: "उत्कृष्ट कामगिरी", link: "/news/excellent-performance" },
+      { title: "गुन्हे आढावा", link: "/news/crime-review" },
+      { title: "छायाचित्र संग्रह", link: "/news/photo-gallery" },
+    ],
   },
 ];
 export const ComplaintSection = () => {
@@ -47,19 +53,19 @@ export const ComplaintSection = () => {
 
   return (
     <section className="flex justify-center bg-white">
-      <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full">
+      <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full py-8 px-4">
         {/* Heading */}
-        <div className="text-black mb-10 text-center">
-          <h1 className="text-4xl mb-4">तक्रार, माहिती आणि सुरक्षा – एका क्लिकवर</h1>
-          <p className="text-2xl xl:max-w-[650px] mx-auto">
+        <div className="text-black mb-10 xl:text-center">
+          <h1 className="xl:text-4xl text-3xl mb-4">तक्रार, माहिती आणि सुरक्षा – एका क्लिकवर</h1>
+          <p className="xl:text-2xl xl:max-w-[650px] mx-auto">
             समाजाच्या सुरक्षिततेसाठी आणि सुव्यवस्थेसाठी अनेक महत्त्वाची कामे पार
             पाडतात. त्यांची जबाबदारी विविध क्षेत्रांमध्ये विस्तारलेली आहे.
           </p>
         </div>
         {/* functionality */}
-        <div className=" bg-white text-gray-800 p-4 flex gap-4">
+        <div className=" bg-white text-gray-800 xl:p-4 xl:flex xl:flex-row flex flex-col-reverse gap-4">
       {/* Sidebar */}
-      <aside className="md:col-span-1 space-y-6">
+      <aside className="md:col-span-1 space-y-6 xl:space-y-0">
         <div className="relative">
           <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-500" />
           <Input
@@ -67,58 +73,40 @@ export const ComplaintSection = () => {
             placeholder="येथे शोधा"
           />
         </div>
-        <div className="h-px w-full bg-Natural-Gray-50"></div>
+        <div className="h-px w-full bg-Natural-Gray-50 xl:mt-6"></div>
 
         {/* Dropdown Sections */}
         <div>
-            <div className="border-b border-b-Natural-Gray-60 pb-5">
-          <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg pb-5"
-            onClick={() => toggleSection("ऑनलाइन सेवा आणि फॉर्म")}
-          >
-            ऑनलाइन सेवा आणि फॉर्म {expandedSection === "ऑनलाइन सेवा आणि फॉर्म" ? <ChevronUp /> : <ChevronDown />}
-          </button>
-          {expandedSection === "ऑनलाइन सेवा आणि फॉर्म" && (
-            <ul className="mt-2 ml-1 text-lg text-gray-800 space-y-6">
-              <li>ई-चालन भरणा</li>
-              <li>हरवलेली व्यक्ती</li>
-              <li>फॉर्म डाउनलोड करा</li>
-              <li>अनोळखी मृतदेह</li>
-              <li>प्रकाशित एफआयआर</li>
-              <li>पोलीस क्लिअरन्स सेवा</li>
-              <li>अटक करण्यात आलेले आरोपी</li>
-              <li>नागरिक पोर्टल</li>
-            </ul>
-          )}
-        </div>
+            {sections.map((section) => (
+              <div key={section.section} className="border-b border-b-Natural-Gray-60">
+              <button
+                className="flex items-center justify-between w-full text-Primary-Blue-30 font-bold xl:text-lg py-5"
+                onClick={() => toggleSection(section.section)}
+              >
+                {section.section} {expandedSection === section.section ? <ChevronUp /> : <ChevronDown />}
+              </button>
+              {expandedSection === section.section && (
+                <ul className="mb-4 ml-1 xl:text-lg text-sm text-Natural-Gray-50 space-y-6">
+                {section.items.map((item, index) => (
+                  <li key={index}>
+                  <Link href={item.link} target="_blank">{item.title}</Link>
+                  </li>
+                ))}
+                </ul>
+              )}
+              </div>
+            ))}
 
-        <div className="border-b border-b-Natural-Gray-60 py-5">
-          <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg"
-            onClick={() => toggleSection("लोकप्रिय माहिती")}
-          >
-            लोकप्रिय माहिती {expandedSection === "लोकप्रिय माहिती" ? <ChevronUp /> : <ChevronDown />}
-          </button>
-        </div>
-
-        <div className="border-b border-b-Natural-Gray-60 py-5">
-          <button
-            className="flex items-center justify-between w-full text-blue-700 font-bold text-lg"
-            onClick={() => toggleSection("नवीन काय ?")}
-          >
-            नवीन काय ? {expandedSection === "नवीन काय ?" ? <ChevronUp /> : <ChevronDown />}
-          </button>
-        </div>
 </div>
       </aside>
 
       {/* Grid of Services */}
-      <main className="flex gap-5">
-         <div className="flex flex-col gap-5">
-         <div className="flex gap-5">
-          <div className="flex flex-col gap-5">
+      <main className="xl:flex xl:flex-row flex flex-col xl:gap-5 gap-[10px]">
+         <div className="flex flex-col xl:gap-5 gap-[10px]">
+         <div className="xl:flex xl:flex-row flex flex-col xl:gap-5 gap-[10px]">
+          <div className="xl:flex xl:flex-col flex  xl:gap-5 gap-[10px]">
           <div
-            className="relative w-[172px] h-[257px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[172px] xl:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint1.png'
@@ -132,7 +120,7 @@ export const ComplaintSection = () => {
             </div>
           </div>
           <div
-            className="relative w-[172px] h-[257px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[172px] xl:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint1.png'
@@ -146,10 +134,10 @@ export const ComplaintSection = () => {
             </div>
           </div>
           </div>
-          <div className="flex flex-col gap-5">
-          <div className="flex gap-5">
+          <div className="flex flex-col xl:gap-5 gap-[10px]">
+          <div className="flex xl:gap-5 gap-[10px]">
           <div
-            className="relative w-[153px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[153px] w-[166px] xl:h-fit h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src="/image/complaints/complaint4.png"
@@ -162,8 +150,9 @@ export const ComplaintSection = () => {
               हरवलेली किंवा सापडलेली माहिती नोंदवा
             </div>
           </div>
+          <Link href="https://www.ceir.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" className="xl:w-[153px] xl:h-fit w-[166px] h-[232px]">
           <div
-            className="relative w-[153px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[153px] xl:h-fit w-[166px] h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint3.png'
@@ -176,9 +165,11 @@ export const ComplaintSection = () => {
               चोरलेला/हरवलेला मोबाइल ब्लॉक करा
             </div>
           </div>
+          </Link>
           </div>
+          <Link href="https://cybercrime.gov.in/Webform/Accept.aspx" target="_blank">
           <div
-            className="relative w-[330px] h-[330px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[330px] xl:h-[330px] w-full h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint5.png'
@@ -191,12 +182,46 @@ export const ComplaintSection = () => {
               महिला/मुलांवरील गुन्‍हेाची तक्रार नोंदवा
             </div>
           </div>
+          </Link>
           </div>
           </div>
           
-          
+          <div className="flex xl:hidden xl:gap-5 gap-[10px] w-full">
+          <Link href="https://cybercrime.gov.in/Webform/Accept.aspx" target="_blank">
           <div
-            className="relative w-[530px] h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative xl:w-[180px] xl:h-[319px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <img
+              src='/image/complaints/complaint2.png'
+              alt='complaint1'
+              className="w-full h-full object-cover"
+            />
+            <div
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+            >
+              आर्थिक फसवणुकीची तक्रार नोंदवा
+            </div>
+          </div>
+          </Link>
+          <Link href={'https://cybercrime.gov.in/Webform/Accept.aspx'} target="_blank">
+          <div
+            className="relative xl:w-[180px] xl:h-[390px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <img
+              src='/image/complaints/complaint6.png'
+              alt='complaint1'
+              className="w-full h-full object-cover"
+            />
+            <div
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+            >
+              इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा
+            </div>
+          </div>
+          </Link>
+          </div>
+          <div
+            className="relative xl:w-[530px] w-full h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint7.png'
@@ -210,7 +235,9 @@ export const ComplaintSection = () => {
             </div>
           </div>
          </div>
-          <div className="flex flex-col gap-5">
+         {/* for web */}
+          <div className="xl:flex xl:flex-col hidden gap-5">
+          <Link href={"https://cybercrime.gov.in/Webform/Accept.aspx"} target="_blank">
           <div
             className="relative w-[180px] h-[319px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
@@ -225,6 +252,8 @@ export const ComplaintSection = () => {
               आर्थिक फसवणुकीची तक्रार नोंदवा
             </div>
           </div>
+          </Link>
+          <Link href={'https://cybercrime.gov.in/Webform/Accept.aspx'} target="_blank">
           <div
             className="relative w-[180px] h-[390px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
@@ -239,6 +268,7 @@ export const ComplaintSection = () => {
               इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा
             </div>
           </div>
+          </Link>
           </div>
       </main>
     </div>
