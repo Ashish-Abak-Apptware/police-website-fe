@@ -13,53 +13,53 @@ export default function LatestActivity() {
             {/* first column */}
           <div className="flex flex-col gap-4">
           <div className="">
-            <Image src="/image/activity/activity1.png" alt="प्रसंग तपशील येथे आहे" width={303} height={210} className="rounded-xl" />
+            <Image src="/assets/activity/activity1.png" alt="प्रसंग तपशील येथे आहे" width={303} height={210} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity4.png" alt="प्रसंग तपशील येथे आहे" width={303} height={436} className="rounded-xl" />
+            <Image src="/assets/activity/activity4.png" alt="प्रसंग तपशील येथे आहे" width={303} height={436} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div className="">
-            <Image src="/image/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={303} height={457} className="rounded-xl" />
+            <Image src="/assets/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={303} height={457} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
           {/* second column */}
           <div className="flex flex-col gap-4">
           <div>
-            <Image src="/image/activity/activity2.png" alt="प्रसंग तपशील येथे आहे" width={304} height={250} className="rounded-xl" />
+            <Image src="/assets/activity/activity2.png" alt="प्रसंग तपशील येथे आहे" width={304} height={250} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div className="">
-            <Image src="/image/activity/activity5.png" alt="प्रसंग तपशील येथे आहे" width={304} height={210} className="rounded-xl" />
+            <Image src="/assets/activity/activity5.png" alt="प्रसंग तपशील येथे आहे" width={304} height={210} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity8.png" alt="प्रसंग तपशील येथे आहे" width={304} height={400} className="rounded-xl" />
+            <Image src="/assets/activity/activity8.png" alt="प्रसंग तपशील येथे आहे" width={304} height={400} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity10.png" alt="प्रसंग तपशील येथे आहे" width={304} height={193} className="rounded-xl" />
+            <Image src="/assets/activity/activity10.png" alt="प्रसंग तपशील येथे आहे" width={304} height={193} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
           {/* third column */}
           <div className="flex flex-col gap-4">
           <div>
-            <Image src="/image/activity/activity3.png" alt="प्रसंग तपशील येथे आहे" width={303} height={220} className="rounded-xl" />
+            <Image src="/assets/activity/activity3.png" alt="प्रसंग तपशील येथे आहे" width={303} height={220} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity6.png" alt="प्रसंग तपशील येथे आहे" width={303} height={366} className="rounded-xl" />
+            <Image src="/assets/activity/activity6.png" alt="प्रसंग तपशील येथे आहे" width={303} height={366} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={303} height={156} className="rounded-xl" />
+            <Image src="/assets/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={303} height={156} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity11.png" alt="प्रसंग तपशील येथे आहे" width={303} height={299} className="rounded-xl" />
+            <Image src="/assets/activity/activity11.png" alt="प्रसंग तपशील येथे आहे" width={303} height={299} className="rounded-xl" />
             <p className="text-p3ExtraLightInter leading-p3ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
@@ -69,15 +69,15 @@ export default function LatestActivity() {
             {/* first column */}
           <div className="flex flex-col gap-4">
           <div className="">
-            <Image src="/image/activity/activity1.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <Image src="/assets/activity/activity1.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity4.png" alt="प्रसंग तपशील येथे आहे" width={166} height={300} className="rounded-xl w-[166px] h-[282px]" />
+            <Image src="/assets/activity/activity4.png" alt="प्रसंग तपशील येथे आहे" width={166} height={300} className="rounded-xl w-[166px] h-[282px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity11.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
+            <Image src="/assets/activity/activity11.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           
@@ -85,19 +85,19 @@ export default function LatestActivity() {
           {/* second column */}
           <div className="flex flex-col gap-4">
           <div className="">
-            <Image src="/image/activity/activity2.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <Image src="/assets/activity/activity2.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity3.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <Image src="/assets/activity/activity3.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div className="">
-            <Image src="/image/activity/activity5.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
+            <Image src="/assets/activity/activity5.png" alt="प्रसंग तपशील येथे आहे" width={166} height={119} className="rounded-xl w-[166px] h-[119px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity6.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
+            <Image src="/assets/activity/activity6.png" alt="प्रसंग तपशील येथे आहे" width={166} height={201} className="rounded-xl w-[166px] h-[201px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           
@@ -107,23 +107,23 @@ export default function LatestActivity() {
         {/* second row */}
         <div className="flex flex-col gap-4 mt-2 md:hidden">
           <div>
-            <Image src="/image/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={343} height={194} className="rounded-xl w-[343px] h-[194px]" />
+            <Image src="/assets/activity/activity7.png" alt="प्रसंग तपशील येथे आहे" width={343} height={194} className="rounded-xl w-[343px] h-[194px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>
             {/* third row */}
         <div className="flex gap-4 mt-2 md:hidden">
         <div className="">
-            <Image src="/image/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={166} height={261} className="rounded-xl w-[166px] h-[261px]" />
+            <Image src="/assets/activity/activity9.png" alt="प्रसंग तपशील येथे आहे" width={166} height={261} className="rounded-xl w-[166px] h-[261px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div className="">
           <div>
-            <Image src="/image/activity/activity8.png" alt="प्रसंग तपशील येथे आहे" width={166} height={105} className="rounded-xl w-[166px] h-[105px]" />
+            <Image src="/assets/activity/activity8.png" alt="प्रसंग तपशील येथे आहे" width={166} height={105} className="rounded-xl w-[166px] h-[105px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           <div>
-            <Image src="/image/activity/activity10.png" alt="प्रसंग तपशील येथे आहे" width={166} height={126} className="rounded-xl w-[166px] h-[126px]" />
+            <Image src="/assets/activity/activity10.png" alt="प्रसंग तपशील येथे आहे" width={166} height={126} className="rounded-xl w-[166px] h-[126px]" />
             <p className="text-p5ExtraLightInter text-center mt-2 text-white">प्रसंग तपशील येथे आहे</p>
           </div>
           </div>

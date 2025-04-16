@@ -1,10 +1,10 @@
 'use client';
-import Image from "next/image";
 import { Button } from "../UI/Button";
 import { useState } from "react";
 import { X } from "lucide-react";
 import { AIMLtag } from "../UI/AIMLtag";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ export const Header = () => {
         {/* left content */}
         <div className="xl:w-[311px] justify-center flex flex-col gap-3 xl:pb-40 md:pb-[200px] pb-10 md:pl-18 xl:pl-0">
           <Image
-            src="/image/header/header6.png"
+            src="/assets/header/header6.png"
             alt="logo"
             height={80}
             width={80}
@@ -50,7 +50,7 @@ export const Header = () => {
           <div className="flex gap-[10px]">
             <div className="w-[253px] h-[100px] rounded-[15px]">
               <Image
-                src="/image/header/header1.png"
+                src="/assets/header/header1.png"
                 alt="header1"
                 height={500}
                 width={500}
@@ -64,7 +64,7 @@ export const Header = () => {
                 <br /> बैठक
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -77,7 +77,7 @@ export const Header = () => {
             <Link href="/e-meet" target="_blank">
             <div className="flex flex-col gap-2 w-[145px] h-[160px] rounded-[15px] bg-white p-5 cursor-pointer">
               <Image
-                src="/image/header/header2.png"
+                src="/assets/header/header2.png"
                 alt="header2"
                 height={500}
                 width={500}
@@ -98,7 +98,7 @@ export const Header = () => {
               </h5>
               <p className="text-Natural-Gray-50 text-p5ExtraLightInter">अजून वाचा</p>
               <Image
-                src="/image/header/header3.png"
+                src="/assets/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
@@ -114,7 +114,7 @@ export const Header = () => {
             </div>
             <div className="w-[156px] h-[170px] rounded-[15px] bg-white pt-5 overflow-hidden flex flex-col justify-between items-center">
               <Image
-                src="/image/header/header5.svg"
+                src="/assets/header/header5.svg"
                 alt="header5"
                 height={500}
                 width={500}
@@ -139,7 +139,7 @@ export const Header = () => {
                 </p>
               </div>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -175,7 +175,7 @@ export const Header = () => {
             नाशिक पोलिसांचा पुढाकार
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -187,7 +187,7 @@ export const Header = () => {
           <div className="flex gap-[10px]">
             <div className="w-[253px] h-[100px] rounded-[15px]">
               <Image
-                src="/image/header/header1.png"
+                src="/assets/header/header1.png"
                 alt="header1"
                 height={500}
                 width={500}
@@ -201,7 +201,7 @@ export const Header = () => {
                 <br /> बैठक
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -214,7 +214,7 @@ export const Header = () => {
             <Link href="/e-meet" target="_blank">
             <div className="flex flex-col gap-2 w-[145px] h-[160px] rounded-[15px] bg-white p-5 cursor-pointer">
               <Image
-                src="/image/header/header2.png"
+                src="/assets/header/header2.png"
                 alt="header2"
                 height={500}
                 width={500}
@@ -235,7 +235,7 @@ export const Header = () => {
               </h5>
               <p className="text-Natural-Gray-50 text-p5ExtraLightInter">अजून वाचा</p>
               <Image
-                src="/image/header/header3.png"
+                src="/assets/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
@@ -251,7 +251,7 @@ export const Header = () => {
             </div>
             <div className="w-[156px] h-[170px] rounded-[15px] bg-white pt-5 overflow-hidden flex flex-col justify-between items-center">
               <Image
-                src="/image/header/header5.svg"
+                src="/assets/header/header5.svg"
                 alt="header5"
                 height={500}
                 width={500}
@@ -276,7 +276,7 @@ export const Header = () => {
                 </p>
               </div>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -312,7 +312,7 @@ export const Header = () => {
             नाशिक पोलिसांचा पुढाकार
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -340,7 +340,7 @@ export const Header = () => {
             </div>
             <div className="w-[150px] h-[129px] rounded-[15px] bg-white pt-5 overflow-hidden flex flex-col justify-between items-center">
               <Image
-                src="/image/header/header5.svg"
+                src="/assets/header/header5.svg"
                 alt="header5"
                 height={500}
                 width={500}
@@ -364,7 +364,7 @@ export const Header = () => {
                 <br /> बैठक
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -385,7 +385,7 @@ export const Header = () => {
               </h5>
               <p className="text-Natural-Gray-50 text-p5ExtraLightInter">अजून वाचा</p>
               <Image
-                src="/image/header/header3.png"
+                src="/assets/header/header3.png"
                 alt="header3"
                 height={500}
                 width={500}
@@ -398,7 +398,7 @@ export const Header = () => {
           <Link href="/meeting" target="_blank">
             <div className="flex flex-col gap-2 w-[150px] h-[223px] rounded-[15px] bg-white p-5 cursor-pointer">
               <Image
-                src="/image/header/header2.png"
+                src="/assets/header/header2.png"
                 alt="header2"
                 height={500}
                 width={500}
@@ -411,7 +411,7 @@ export const Header = () => {
             <div className="flex flex-col gap-[10px]">
           <div className="w-[155px] h-[87px] rounded-[15px]">
               <Image
-                src="/image/header/header1.png"
+                src="/assets/header/header1.png"
                 alt="header1"
                 height={500}
                 width={500}
@@ -426,7 +426,7 @@ export const Header = () => {
                 </p>
               </div>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -464,7 +464,7 @@ export const Header = () => {
             नाशिक पोलिसांचा पुढाकार
               </h5>
               <Image
-                src="/image/header/arrow.svg"
+                src="/assets/header/arrow.svg"
                 alt="arrow"
                 height={40}
                 width={40}
@@ -493,9 +493,9 @@ export const Header = () => {
           className=" p-3 px-5 bg-chatbot-bg bg-contain bg-no-repeat xl:w-[350px] xl:h-[140px] md:w-[200px] md:h-[100px] w-[220px] h-[140px] flex justify-between items-center gap-2 cursor-pointer relative z-50"
         >
           <div className="absolute xl:top-0 xl:left-32 md:left-14 -top-2 left-20 xl:scale-100 scale-75 text-[10px] px-1 rounded-sm"><AIMLtag/></div>
-          <Image src="/image/chatbot-avatar.svg" alt="Chatbot" width={200} height={200} className="absolute xl:-top-[180px] -top-[150px] -left-8 md:-left-6 xl:w-[180px] xl:h-[180px] w-[150px] h-[150px]"/>
+          <Image src="/assets/chatbot-avatar.svg" alt="Chatbot" width={200} height={200} className="absolute xl:-top-[180px] -top-[150px] -left-8 md:-left-6 xl:w-[180px] xl:h-[180px] w-[150px] h-[150px]"/>
           <p className="text-Primary-Blue-30 font-bold font-Inter text-lg xl:text-[21px] md:text-sm  md:w-[120px] xl:w-[150px] xl:pt-6">आपला हक्काचा सहायक</p>
-          <Image src="/image/header/arrow.svg"
+          <Image src="/assets/header/arrow.svg"
             alt="arrow"
             height={40}
             width={40}
@@ -508,7 +508,7 @@ export const Header = () => {
           <div className="bg-chatbot-bg bg-no-repeat bg-cover bg-transparent px-4 py-2 text-Primary-Blue-30 font-semibold flex items-center justify-between">
             <span>आपला हक्काचा सहायक</span>
             <button onClick={toggleChat} className="text-xl font-bold text-black">
-            <Image src="/image/header/arrow-down.svg"
+            <Image src="/assets/header/arrow-down.svg"
             alt="arrow"
             height={30}
             width={30}
@@ -522,7 +522,7 @@ export const Header = () => {
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.sender === "bot" ? "justify-start" : "justify-end"}`}>
                 <div className={`rounded-xl px-3 py-2 text-sm ${msg.sender === "bot" ? "bg-gray-100 text-Primary-Blue-30" : "bg-Primary-Blue-80 text-Primary-Blue-30"}`}>
-                  {msg.sender === "bot" && <Image src="/image/chatbot-avatar.svg" alt="bot" width={100} height={100} className=" mr-2 md:w-[60px] md:h-[100px] w-[30px] h-[50px]" />}
+                  {msg.sender === "bot" && <Image src="/assets/chatbot-avatar.svg" alt="bot" width={100} height={100} className=" mr-2 md:w-[60px] md:h-[100px] w-[30px] h-[50px]" />}
                   {msg.text}
                 </div>
               </div>
@@ -541,7 +541,7 @@ export const Header = () => {
               onClick={handleSend}
               className="ml-2 bg-primary text-white p-2 rounded-full"
             >
-              <Image src="/image/header/arrow.svg"
+              <Image src="/assets/header/arrow.svg"
             alt="arrow"
             height={30}
             width={30}
@@ -572,7 +572,7 @@ export const Header = () => {
               {/* Card 1 */}
               <div className=" overflow-hidden">
                 <Image
-                  src="/image/header/passport.png"
+                  src="/assets/header/passport.png"
                   alt="पासपोर्ट इंरिफीकेशन"
                   width={600}
                   height={300}
@@ -594,7 +594,7 @@ export const Header = () => {
               {/* Card 2 */}
               <div className=" overflow-hidden">
                 <Image
-                  src="/image/header/clearence.png"
+                  src="/assets/header/clearence.png"
                   alt="पोलीस सर्टिफिकेट"
                   width={600}
                   height={300}

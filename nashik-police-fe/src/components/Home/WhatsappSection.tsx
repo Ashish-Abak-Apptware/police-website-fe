@@ -24,7 +24,7 @@ export default function WhatsappSection() {
             पोलीस आयुक्तांचा व्हॉट्सअ‍ॅप नंबर 
             </h1>
               <Link href={'https://api.whatsapp.com/send/?phone=9923323311'} target="_blank">
-              <p className="flex gap-2 xl:text-h3RegularKhand text-h4MediumKhand items-center text-Natural-Gray-100"><Image src="/image/whatsapp.png" alt="whatsapp" height={50} width={50}/>९९२३३२३३११</p>
+              <p className="flex gap-2 xl:text-h3RegularKhand text-h4MediumKhand items-center text-Natural-Gray-100"><Image src="/assets/whatsapp.png" alt="whatsapp" height={50} width={50}/>९९२३३२३३११</p>
               </Link>
           </div>
     </section>

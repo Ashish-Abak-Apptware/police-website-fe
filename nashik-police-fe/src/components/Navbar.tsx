@@ -17,7 +17,7 @@ const Navbar = () => {
             <section className="fixed z-50 flex justify-between px-5 h-[65px] bg-white rounded-[15px] xl:w-[1280px] md:w-[768px] shadow-xl w-full">
                 <div className={`content-center ${isMenuOpen ? 'block' : 'hidden md:block'}`}>
                     <Link href="/">
-                        <Image src='/image/PoliceLogo.svg' alt='logo' width={52} height={52} />
+                        <Image src='/assets/PoliceLogo.svg' alt='logo' width={52} height={52} />
                     </Link>
                 </div>
                 <button
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <MenuSquareIcon color='#03018D' size={30}/>
                 </button>
                 <div className={`content-center ${isMenuOpen ? 'hidden' : 'block md:hidden'}`}>
-                        <Image src='/image/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
+                        <Image src='/assets/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
                     </div>
                     <div className={`absolute md:static top-[65px] left-0 w-full my-auto  bg-white flex flex-col justify-between ${isMenuOpen?'flex h-[90vh] pb-20 px-4':'md:flex hidden'}`}>
                     <ul
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <Link href="#">शाखा</Link>
                     </li>
                     <li className='content-center md:block hidden'>
-                        <Image src='/image/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
+                        <Image src='/assets/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
                     </li>
                     
                 </ul>

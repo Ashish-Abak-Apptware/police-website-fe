@@ -109,7 +109,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[172px] md:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint1.png'
+              src='/assets/complaints/complaint1.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -123,7 +123,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[172px] md:h-[257px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint1.png'
+              src='/assets/complaints/complaint1.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -140,7 +140,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[153px] w-[166px] md:h-fit h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src="/image/complaints/complaint4.png"
+              src="/assets/complaints/complaint4.png"
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -155,7 +155,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[153px] md:h-fit w-[166px] h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint3.png'
+              src='/assets/complaints/complaint3.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -172,7 +172,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[330px] md:h-[330px] w-full h-[232px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint5.png'
+              src='/assets/complaints/complaint5.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -192,7 +192,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[180px] md:h-[319px] w-[160px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint2.png'
+              src='/assets/complaints/complaint2.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -208,7 +208,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[180px] md:h-[390px] w-[160px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint6.png'
+              src='/assets/complaints/complaint6.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -224,7 +224,7 @@ export const ComplaintSection = () => {
             className="relative md:w-[530px] w-full h-fit has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint7.png'
+              src='/assets/complaints/complaint7.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -242,7 +242,7 @@ export const ComplaintSection = () => {
             className="relative w-[180px] h-[319px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint2.png'
+              src='/assets/complaints/complaint2.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />
@@ -258,7 +258,7 @@ export const ComplaintSection = () => {
             className="relative w-[180px] h-[390px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
-              src='/image/complaints/complaint6.png'
+              src='/assets/complaints/complaint6.png'
               alt='complaint1'
               className="w-full h-full object-cover"
             />

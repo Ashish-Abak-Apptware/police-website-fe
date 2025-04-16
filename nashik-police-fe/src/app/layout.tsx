@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   title: "Home | Nashik City Police",
   description: "Nashik City Police",
   icons: {
-    icon: '/image/PoliceLogo.svg',
-    shortcut: '/image/PoliceLogo.svg',
+    icon: '/assets/PoliceLogo.svg',
+    shortcut: '/assets/PoliceLogo.svg',
   }
 };
 

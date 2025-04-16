@@ -2,15 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 import Data from '@/Data/data.json';
 const sponcers=[
-    '/image/footer/image1.png',
-    '/image/footer/image2.png',
-    '/image/footer/image3.png',
-    '/image/footer/image4.png',
-    '/image/footer/image5.png',
-    '/image/footer/image6.png',
-    '/image/footer/image7.png',
-    '/image/footer/image8.png',
-    '/image/footer/image9.png'
+    '/assets/footer/image1.png',
+    '/assets/footer/image2.png',
+    '/assets/footer/image3.png',
+    '/assets/footer/image4.png',
+    '/assets/footer/image5.png',
+    '/assets/footer/image6.png',
+    '/assets/footer/image7.png',
+    '/assets/footer/image8.png',
+    '/assets/footer/image9.png'
 ]
 const {footer}=Data;
 export const Footer=()=>{
@@ -48,9 +48,9 @@ export const Footer=()=>{
                     <li><Link href="/disclamer">डिस्क्लेमर</Link></li>
                 </ul>
                 <ul className="flex gap-[38px] justify-center">
-                    <li><Link href="#"><Image src='/image/social/twitter.png' alt="twitter" width={18} height={18}/></Link></li>
-                    <li><Link href="#"><Image src='/image/social/facebook.png' alt="facebook" width={18} height={18}/></Link></li>
-                    <li><Link href="#"><Image src='/image/social/instagram.png' alt="instagram" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/assets/social/twitter.png' alt="twitter" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/assets/social/facebook.png' alt="facebook" width={18} height={18}/></Link></li>
+                    <li><Link href="#"><Image src='/assets/social/instagram.png' alt="instagram" width={18} height={18}/></Link></li>
                 </ul>
             </div>
             </section>

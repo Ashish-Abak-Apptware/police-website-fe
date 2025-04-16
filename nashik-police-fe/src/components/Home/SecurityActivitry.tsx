@@ -10,7 +10,7 @@ export default function SecurityActivity() {
           <h2 className="xl:text-h3RegularKhand text-h4MediumKhand font-bold mb-2 text-Natural-Gray-20">सुरक्षा आणि सेवा उपक्रम</h2>
           <div>
           <Image
-            src="/image/security/security1.png"
+            src="/assets/security/security1.png"
             alt="Police Officers Working"
             width={600}
             height={400}
@@ -27,7 +27,7 @@ export default function SecurityActivity() {
         </div>
         <div>
           <Image
-            src="/image/security/security1.png"
+            src="/assets/security/security1.png"
             alt="Police Officers Working"
             width={600}
             height={400}
@@ -39,7 +39,7 @@ export default function SecurityActivity() {
       <div className="grid md:grid-cols-3 gap-6 mt-10">
         <div className="text-left">
           <Image
-            src="/image/security/security2.png"
+            src="/assets/security/security2.png"
             alt="सुरक्षित नाशिक"
             width={400}
             height={250}
@@ -52,7 +52,7 @@ export default function SecurityActivity() {
         </div>
         <div className="text-left">
           <Image
-            src="/image/security/security3.png"
+            src="/assets/security/security3.png"
             alt="वॉक विथ पोलिस"
             width={400}
             height={250}
@@ -65,7 +65,7 @@ export default function SecurityActivity() {
         </div>
         <div className="text-left">
           <Image
-            src="/image/security/security4.png"
+            src="/assets/security/security4.png"
             alt="सुधारित नाशिक"
             width={400}
             height={250}
