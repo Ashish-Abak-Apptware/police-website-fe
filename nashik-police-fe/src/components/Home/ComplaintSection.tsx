@@ -52,12 +52,12 @@ export const ComplaintSection = () => {
   };
 
   return (
-    <section className="flex justify-center bg-white">
+    <section className="flex justify-center bg-white font-khand">
       <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full py-8 px-4">
         {/* Heading */}
-        <div className="text-black mb-10 xl:text-center">
-          <h1 className="xl:text-4xl text-3xl mb-4">तक्रार, माहिती आणि सुरक्षा – एका क्लिकवर</h1>
-          <p className="xl:text-2xl xl:max-w-[650px] mx-auto">
+        <div className="text-black mb-10">
+          <h1 className="xl:text-h3RegularKhand font-medium text-h4MediumKhand leading-h4MediumKhand mb-4">तक्रार, माहिती आणि सुरक्षा – एका क्लिकवर</h1>
+          <p className="text-sH1RegularKhand xl:max-w-[650px]">
             समाजाच्या सुरक्षिततेसाठी आणि सुव्यवस्थेसाठी अनेक महत्त्वाची कामे पार
             पाडतात. त्यांची जबाबदारी विविध क्षेत्रांमध्ये विस्तारलेली आहे.
           </p>
@@ -80,13 +80,13 @@ export const ComplaintSection = () => {
             {sections.map((section) => (
               <div key={section.section} className="border-b border-b-Natural-Gray-60">
               <button
-                className="flex items-center justify-between w-full text-Primary-Blue-30 font-bold xl:text-lg py-5"
+                className="flex items-center justify-between w-full text-Primary-Blue-30 font-medium xl:text-h6RegularKhand text-sH1RegularKhand py-5"
                 onClick={() => toggleSection(section.section)}
               >
                 {section.section} {expandedSection === section.section ? <ChevronUp /> : <ChevronDown />}
               </button>
               {expandedSection === section.section && (
-                <ul className="mb-4 ml-1 xl:text-lg text-sm text-Natural-Gray-50 space-y-6">
+                <ul className="mb-4 ml-1 xl:text-p2ExtraLightInter xl:leading-p3ExtraLightInter text-p3ExtraLightInter leading-p2ExtraLightInter text-Natural-Gray-50 space-y-6">
                 {section.items.map((item, index) => (
                   <li key={index}>
                   <Link href={item.link} target="_blank">{item.title}</Link>
@@ -114,7 +114,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               ऑनलाइन गुन्‍हेाची नोंद करा
             </div>
@@ -128,7 +128,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               भाडेकरू माहिती नोंदवा
             </div>
@@ -145,7 +145,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               हरवलेली किंवा सापडलेली माहिती नोंदवा
             </div>
@@ -160,7 +160,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               चोरलेला/हरवलेला मोबाइल ब्लॉक करा
             </div>
@@ -177,7 +177,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm bg-gradient-to-t from-yellow-500/30`}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter bg-gradient-to-t from-yellow-500/30`}
             >
               महिला/मुलांवरील गुन्‍हेाची तक्रार नोंदवा
             </div>
@@ -189,7 +189,7 @@ export const ComplaintSection = () => {
           <div className="flex md:hidden md:gap-5 gap-[10px] w-full">
           <Link href="https://cybercrime.gov.in/Webform/Accept.aspx" target="_blank">
           <div
-            className="relative md:w-[180px] md:h-[319px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[180px] md:h-[319px] w-[160px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint2.png'
@@ -197,7 +197,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               आर्थिक फसवणुकीची तक्रार नोंदवा
             </div>
@@ -205,7 +205,7 @@ export const ComplaintSection = () => {
           </Link>
           <Link href={'https://cybercrime.gov.in/Webform/Accept.aspx'} target="_blank">
           <div
-            className="relative md:w-[180px] md:h-[390px] w-[166px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="relative md:w-[180px] md:h-[390px] w-[160px] h-[100px] has-first:overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src='/image/complaints/complaint6.png'
@@ -213,7 +213,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा
             </div>
@@ -229,7 +229,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               हरवलेल्या मोबाइलची सूचना
             </div>
@@ -247,7 +247,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               आर्थिक फसवणुकीची तक्रार नोंदवा
             </div>
@@ -263,7 +263,7 @@ export const ComplaintSection = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-sm `}
+              className={`absolute inset-0 flex items-end p-3 text-white font-semibold text-p3ExtraLightInter leading-p2ExtraLightInter `}
             >
               इतर सायबर गुन्‍ह्यांची तक्रार नोंदवा
             </div>

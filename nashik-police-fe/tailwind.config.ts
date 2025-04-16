@@ -9,111 +9,111 @@ const config: Config = {
   theme: {
     extend: {
         fontSize: {
-            'P1-Regular-Inter': [
-              '24px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'P2-Extra-Light-Inter': [
-              '18px',
-              {
-                fontWeight: 400,
-                lineHeight: '23px'
-              }
-            ],
-            'P3-Extra-Light-Inter': [
-              '16px',
-              {
-                fontWeight: 400,
-                lineHeight: '26px'
-              }
-            ],
-            'P4-Extra-Light-Inter': [
-              '14px',
-              {
-                fontWeight: 400,
-                lineHeight: '14px'
-              }
-            ],
-            'P5-Extra-Light-Inter': [
-              '12px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'HL-Regular-Khand': [
-              '96px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'H1-Regular-Khand': [
-              '72px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'H2-Medium-Khand': [
-              '60px',
-              {
-                fontWeight: 500,
-                lineHeight: '73px'
-              }
-            ],
-            'H3-Regular-Khand': [
-              '48px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'H3-Medium-Khand': [
-              '48px',
-              {
-                fontWeight: 500,
-                lineHeight: 'auto'
-              }
-            ],
-            'H4-Medium-Khand': [
-              '34px',
-              {
-                fontWeight: 500,
-                lineHeight: '40px'
-              }
-            ],
-            'H5-Regular-Khand': [
-              '30px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
-            'H6-Regular-Khand': [
-              '24px',
-              {
-                fontWeight: 400,
-                lineHeight: '29px'
-              }
-            ],
-            'H6-Medium-Khand': [
-              '24px',
-              {
-                fontWeight: 500,
-                lineHeight: 'auto'
-              }
-            ],
-            'SH1-Regular-Khand': [
-              '20px',
-              {
-                fontWeight: 400,
-                lineHeight: 'auto'
-              }
-            ],
+            // 'P1RegularInter': [
+            //   '24px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'P2ExtraLightInter': [
+            //   '18px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: '23px'
+            //   }
+            // ],
+            // 'P3ExtraLightInter': [
+            //   '16px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: '26px'
+            //   }
+            // ],
+            // 'P4ExtraLightInter': [
+            //   '14px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: '14px'
+            //   }
+            // ],
+            // 'P5ExtraLightInter': [
+            //   '12px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'HLRegularKhand': [
+            //   '96px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'H1RegularKhand': [
+            //   '72px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'H2MediumKhand': [
+            //   '60px',
+            //   {
+            //     fontWeight: 500,
+            //     lineHeight: '73px'
+            //   }
+            // ],
+            // 'H3RegularKhand': [
+            //   '48px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'H3MediumKhand': [
+            //   '48px',
+            //   {
+            //     fontWeight: 500,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'H4MediumKhand': [
+            //   '34px',
+            //   {
+            //     fontWeight: 500,
+            //     lineHeight: '40px'
+            //   }
+            // ],
+            // 'H5RegularKhand': [
+            //   '30px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'H6RegularKhand': [
+            //   '24px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: '29px'
+            //   }
+            // ],
+            // 'H6MediumKhand': [
+            //   '24px',
+            //   {
+            //     fontWeight: 500,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
+            // 'SH1RegularKhand': [
+            //   '20px',
+            //   {
+            //     fontWeight: 400,
+            //     lineHeight: 'auto'
+            //   }
+            // ],
       },
       colors: {
         'natural-gray-10': '#171717',

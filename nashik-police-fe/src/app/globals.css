@@ -11,6 +11,29 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-khand:var(--khand-mr);
+  --font-Inter:var(--Inter-serif);
+
+  --text-p1RegularInter:24px;
+  --text-p2ExtraLightInter:18px;
+  --text-p3ExtraLightInter:16px;
+  --text-p4ExtraLightInter:14px;
+  --text-p5ExtraLightInter:12px;
+  --text-hLRegularKhand:96px;
+  --text-h1RegularKhand:72px;
+  --text-h2MediumKhand:64px;
+  --text-h3RegularKhand:48px;
+  --text-h4MediumKhand:34px;
+  --text-h5RegularKhand:30px;
+  --text-h6RegularKhand:24px;
+  --text-sH1RegularKhand:20px;
+
+  --leading-p2ExtraLightInter:23px;
+  --leading-p3ExtraLightInter:26px;
+  --leading-p4ExtraLightInter:14px;
+  --leading-h2MediumKhand:73px;
+  --leading-h4MediumKhand:40px;
+  --leading-h6RegularKhand:29px;
 }
 
 @media (prefers-color-scheme: dark) {

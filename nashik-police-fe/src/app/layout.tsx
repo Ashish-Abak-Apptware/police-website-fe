@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Khand } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,18 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const khandFont=Khand({
+  variable:"--khand-mr",
+  subsets:["devanagari"],
+  weight:"400"
+});
+
+const InterFont=Inter({
+  variable:"--Inter-serif",
+  subsets:["latin"],
+  weight:"400"
+})
 
 export const metadata: Metadata = {
   title: "Home | Nashik City Police",
@@ -29,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${khandFont.variable} antialiased`}
          cz-shortcut-listen="true"
       >
         {children}

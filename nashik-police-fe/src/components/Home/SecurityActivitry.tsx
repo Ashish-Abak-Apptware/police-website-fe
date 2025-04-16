@@ -3,11 +3,11 @@ import { Button } from "../UI/Button";
 
 export default function SecurityActivity() {
   return (
-    <section className="flex justify-center bg-white">
+    <section className="flex justify-center bg-white font-khand">
         <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] py-[50px] w-full px-4">
       <div className="grid md:grid-cols-2 gap-6 items-start">
         <div>
-          <h2 className="xl:text-3xl text-2xl font-bold mb-2 text-Natural-Gray-20">सुरक्षा आणि सेवा उपक्रम</h2>
+          <h2 className="xl:text-h3RegularKhand text-h4MediumKhand font-bold mb-2 text-Natural-Gray-20">सुरक्षा आणि सेवा उपक्रम</h2>
           <div>
           <Image
             src="/image/security/security1.png"
@@ -17,10 +17,10 @@ export default function SecurityActivity() {
             className="rounded-xl md:hidden pb-5"
           />
         </div>
-          <p className="xl:text-lg text-sm font-medium mb-4 text-Natural-Gray-20">
+          <p className="xl:text-h6RegularKhand text-p3ExtraLightInter font-medium mb-4 text-Natural-Gray-20">
             1. नागरिकांच्या सुरक्षेसाठी आणि सेवे साठी पोलिस विभागाच्या विविध उपक्रमांची माहिती द्या
           </p>
-          <p className="mb-6 text-Natural-Gray-50 text-sm xl:text-lg">
+          <p className="mb-6 text-Natural-Gray-50 text-p3ExtraLightInter xl:leading-p3ExtraLightInter leading-p2ExtraLightInter">
             शहरातील नागरिकांनी आपल्या परिसरातील झालेल्या अनुचित प्रकाराबद्दल सी.पी. व्हॉट्सअॅप नंबर 91333 23333 यावर संदेश स्वरूपात सूचना अथवा माहिती दिली तर त्याची दखल घेऊन तात्काळ कार्यवाही केली जाते.
           </p>
           <Button varient="blue" child="अधिक वाचा"/>
@@ -45,8 +45,8 @@ export default function SecurityActivity() {
             height={250}
             className="rounded-xl"
           />
-          <h3 className="font-semibold text-lg my-4 text-Natural-Gray-20">2. सुरक्षित नाशिक</h3>
-          <p className="text-Natural-Gray-50 text-sm">
+          <h3 className="xl:text-h6RegularKhand text-p3ExtraLightInter font-semibold text-lg my-4 text-Natural-Gray-20">2. सुरक्षित नाशिक</h3>
+          <p className="text-Natural-Gray-50 text-p3ExtraLightInter xl:leading-p3ExtraLightInter leading-p2ExtraLightInter">
             नाशिक शहरातील नागरिकांना सुरक्षितता प्रदान करण्याकरिता तसेच गुन्हेगारीविरुद्ध प्रतिबंधक मोहिम...
           </p>
         </div>
@@ -58,8 +58,8 @@ export default function SecurityActivity() {
             height={250}
             className="rounded-xl"
           />
-          <h3 className="font-semibold text-lg my-4 text-Natural-Gray-20">3. वॉक विथ पोलिस</h3>
-          <p className="text-Natural-Gray-50 text-sm">
+          <h3 className="xl:text-h6RegularKhand text-p3ExtraLightInter font-semibold text-lg my-4 text-Natural-Gray-20">3. वॉक विथ पोलिस</h3>
+          <p className="text-Natural-Gray-50 text-p3ExtraLightInter xl:leading-p3ExtraLightInter leading-p2ExtraLightInter">
             शहरातील पोलिस व नागरिक यांच्यातील जोडींग ट्रस्ट व नागरिकांचे सहभागीतेने चालणाऱ्यांबाबत जागर...
           </p>
         </div>
@@ -71,8 +71,8 @@ export default function SecurityActivity() {
             height={250}
             className="rounded-xl"
           />
-          <h3 className="font-semibold text-lg my-4 text-Natural-Gray-20">4. सुधारित नाशिक</h3>
-          <p className="text-Natural-Gray-50 text-sm">
+          <h3 className=" xl:text-h6RegularKhand text-p3ExtraLightInter font-semibold text-lg my-4 text-Natural-Gray-20">4. सुधारित नाशिक</h3>
+          <p className="text-Natural-Gray-50 text-p3ExtraLightInter xl:leading-p3ExtraLightInter leading-p2ExtraLightInter">
             सुधार, खडान्चे प्रबोधन, सरसकट हल्ले, हरवले बालगुन्हेगारी गुन्ह्यात अल्पवयीन मुलांचा सहभाग थांबवणे...
           </p>
         </div>

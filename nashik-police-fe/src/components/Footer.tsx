@@ -15,7 +15,7 @@ const sponcers=[
 const {footer}=Data;
 export const Footer=()=>{
     return(
-        <footer className="bg-white flex justify-center">
+        <footer className="bg-white flex justify-center font-khand">
             <section className="w-full md:w-[768px] xl:w-[1280px] xl:px-[100px] xl:pt-[100px] px-4 py-8">
                 <div className="grid md:grid-cols-9 grid-cols-3 space-y-4 mb-16">
                     {sponcers.map((each,index)=>(
@@ -23,16 +23,16 @@ export const Footer=()=>{
                     ))}
                 </div>
             <div className="flex justify-between text-2xl">
-                <p className="text-Primary-Blue-30 xl:text-2xl text-sm font-bold">नाशिक शहर पोलिस</p>
-                <p className="text-Natural-Gray-70 xl:text-2xl text-sm">नवीन ओळख, नवीन अस्तित्व </p>
+                <p className="text-Primary-Blue-30 xl:text-h6RegularKhand text-sH1RegularKhand font-bold">नाशिक शहर पोलिस</p>
+                <p className="text-Natural-Gray-70 xl:text-h6RegularKhand text-sH1RegularKhand">नवीन ओळख, नवीन अस्तित्व </p>
             </div>
             <div className="md:flex grid grid-cols-2 space-y-6 justify-between py-10">
                 {footer.map((each,index)=>(
                     <ul key={index} className="flex flex-col gap-3 text-[16px] ">
-                    <li className="text-[#303030] xl:text-2xl font-semibold text-wrap">{each.title}</li>
+                    <li className="text-[#303030] xl:text-h6RegularKhand text-sH1RegularKhand font-semibold text-wrap">{each.title}</li>
                     <div className="">
                     {each.list.map((each,index)=>(
-                    <li key={index} className="text-[#666] xl:text-[16px] text-sm leading-10"><Link href='#' className="">{each}</Link></li>
+                    <li key={index} className="text-Natural-Gray-50 xl:text-p3ExtraLightInter text-p4ExtraLightInter xl:leading-p3ExtraLightInter leading-p2ExtraLightInter"><Link href='#' className="">{each}</Link></li>
                     ))}
                     </div>
                 </ul>
@@ -40,10 +40,10 @@ export const Footer=()=>{
             
             </div>
             <div className="h-px bg-Natural-Gray-80"></div>
-            <div className="md:flex space-y-5 xl:space-y-0 text-center justify-between pt-10 xl:pb-16 text-[#03018D]">
+            <div className="md:flex space-y-5 xl:space-y-0 text-center justify-between pt-10 xl:pb-16 text-Primary-Blue-30">
                 {/* <p>&copy; {new Date().getFullYear()} Nashik City Police</p> */}
-                <p>कॉपीराईट © २०२५ नाशिक शहर पोलिस</p>
-                <ul className="md:flex gap-[38px] text-[16px] space-y-5 xl:space-y-0">
+                <p className="text-p3ExtraLightInter">कॉपीराईट © २०२५ नाशिक शहर पोलिस</p>
+                <ul className="md:flex gap-[38px] text-p3ExtraLightInter space-y-5 xl:space-y-0">
                     <li><Link href="/sitemap">साइटमॅप</Link></li>
                     <li><Link href="/disclamer">डिस्क्लेमर</Link></li>
                 </ul>
