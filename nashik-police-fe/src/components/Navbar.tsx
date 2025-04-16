@@ -13,11 +13,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='flex justify-center bg-white'>
+        <nav className='flex justify-center bg-white font-khand'>
             <section className="fixed z-50 flex justify-between px-5 h-[65px] bg-white rounded-[15px] xl:w-[1280px] md:w-[768px] shadow-xl w-full">
                 <div className={`content-center ${isMenuOpen ? 'block' : 'hidden md:block'}`}>
                     <Link href="/">
-                        <Image src='/image/PoliceLogo.svg' alt='logo' width={52} height={52} />
+                        <Image src='/assets/PoliceLogo.svg' alt='logo' width={52} height={52} />
                     </Link>
                 </div>
                 <button
@@ -28,11 +28,11 @@ const Navbar = () => {
                     <MenuSquareIcon color='#03018D' size={30}/>
                 </button>
                 <div className={`content-center ${isMenuOpen ? 'hidden' : 'block md:hidden'}`}>
-                        <Image src='/image/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
+                        <Image src='/assets/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
                     </div>
-                    <div className={`absolute md:static top-[65px] left-0 w-full my-auto  bg-white flex flex-col justify-between ${isMenuOpen?'flex h-screen pb-20 px-4':'md:flex hidden'}`}>
+                    <div className={`absolute md:static top-[65px] left-0 w-full my-auto  bg-white flex flex-col justify-between ${isMenuOpen?'flex h-[90vh] pb-20 px-4':'md:flex hidden'}`}>
                     <ul
-                    className={`flex divide-y-2 md:divide-y-0 divide-Natural-Gray-70 md:flex flex-col md:flex-row md:justify-end text-Natural-Gray-50 pt-5 md:pt-0 gap-8 xl:gap-16 text-[16px] leading-6 font-normal  md:bg-transparent`}
+                    className={`flex divide-y-2 md:divide-y-0 divide-Natural-Gray-70 md:flex flex-col md:flex-row md:justify-end text-Natural-Gray-50 pt-5 md:pt-0 gap-8 xl:gap-16 xl:text-p3ExtraLightInter xl:leading-p3ExtraLightInter text-p2ExtraLightInter leading-p2ExtraLightInter font-normal  md:bg-transparent`}
                 >
                     <li className='content-center pb-4 md:pb-0'>
                         <Link href="#">आमच्या बद्दल</Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <Link href="#">शाखा</Link>
                     </li>
                     <li className='content-center md:block hidden'>
-                        <Image src='/image/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
+                        <Image src='/assets/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
                     </li>
                     
                 </ul>
