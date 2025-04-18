@@ -62,17 +62,17 @@ export const SearchPoliceStation=()=> {
     setSuggestions([]);
   };
   return (
-    <section className="flex justify-center bg-white">
+    <section className="flex justify-center bg-white font-khand">
         <div className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full px-4 py-[50px]">
       <div className="md:flex justify-between mb-10">
       <div className="">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">
+        <h1 className="xl:text-h3RegularKhand text-h4MediumKhand font-bold text-gray-800">
           आपलं पोलिस स्टेशन शोधा
         </h1>
       </div>
       
-      <p className="text-gray-600 mb-4 md:w-[300px] xl:w-auto">
+      <p className="text-gray-600 mb-4 md:w-[300px] xl:w-auto xl:text-sH1RegularKhand text-p3ExtraLightInter">
         तुम्हाला जवळच्या पोलिस स्टेशनची माहिती मिळवा आणि आवश्यक मदत घ्या.
       </p>
       </div>
@@ -84,7 +84,7 @@ export const SearchPoliceStation=()=> {
           value={''}
           onChange={handleInputChange}
           placeholder="येथे टाइप करा"
-          className="w-full border border-Natural-Gray-70 text-Natural-Gray-50 placeholder:text-Natural-Gray-50 rounded-lg px-4 py-4 text-sm outline-none "
+          className="w-full border border-Natural-Gray-70 text-Natural-Gray-50 placeholder:text-Natural-Gray-50 rounded-lg px-4 py-4 text-p2ExtraLightInter outline-none "
         />
         <div className="absolute top-0 right-2">
           <div className="">
@@ -108,7 +108,7 @@ export const SearchPoliceStation=()=> {
       </div>
 
       {/* Submit Button */}
-      <button className="w-full md:w-fit bg-Primary-Blue-30 text-Natural-Gray-100 mt-3 md:mt-0 h-[52px] px-6 rounded-md font-semibold text-sm">
+      <button className="font-Inter w-full md:w-fit bg-Primary-Blue-30 text-Natural-Gray-100 mt-3 md:mt-0 h-[52px] px-6 rounded-md font-semibold text-p3ExtraLightInter leading-p3ExtraLightInter">
         पेट्रोलिंग स्पॉट सुचवा
       </button>
     </div>
@@ -123,7 +123,7 @@ export const SearchPoliceStation=()=> {
           <MenuIcon color="#03018D" size={20}/>
           {/* {selected["mobileMenu"] ? <ChevronUp size={16} /> : <ChevronDown size={16} />} */}
         </button>
-        <p className="text-sm text-gray-600 mb-2 flex">{query}<span className={`${!query?'hidden':'block'}`}>,</span> नाशिक, महाराष्ट्र ४२२०१०</p>
+        <p className="text-p2ExtraLightInter leading-p2ExtraLightInter text-gray-600 mb-2 flex">{query}<span className={`${!query?'hidden':'block'}`}>,</span> नाशिक, महाराष्ट्र ४२२०१०</p>
         </div>
       
       {selected["mobileMenu"] && (
@@ -166,7 +166,7 @@ export const SearchPoliceStation=()=> {
             <div key={index} className="relative">
           <button
             onClick={() => toggleDropdown(filter.title)}
-            className="flex items-center gap-4 px-8 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-Natural-Gray-50 text-sm font-medium hover:bg-gray-50"
+            className="flex items-center gap-4 px-8 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-Natural-Gray-50 xl:text-p2ExtraLightInter text-p3ExtraLightInter leading-p2ExtraLightInter font-medium hover:bg-gray-50"
           >
             {filter.title}
             {selected[filter.title] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
