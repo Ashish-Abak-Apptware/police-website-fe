@@ -1,7 +1,12 @@
+'use client';
 import Image from "next/image"
 import { Button } from "../UI/Button"
+import { ScheduleModal } from "../UI/ScheduleModal"
+import { useState } from "react";
 
 export const CommissionerQuote=()=>{
+    const [open, setOpen] = useState(false);
+
     return(
         <section className="flex justify-center bg-Natural-Gray-100 font-khand">
             <section className="xl:w-[1280px] xl:p-[100px] md:w-[768px] w-full px-4 py-[50px] flex flex-col gap-16">
@@ -16,10 +21,11 @@ export const CommissionerQuote=()=>{
                         श्री. संदीप कर्णिक (आयपीएस)<br/>
                         पोलीस आयुक्त, नाशिक शहर
                         </p>
-                        <Button varient="blue" child="ई-मीटद्वारे संवाद साधा"/>
+                        <Button varient="blue" child="ई-मीटद्वारे संवाद साधा" onClick={() => setOpen(true)}/>
                     </div>
                 </div>
             </section>
+            <ScheduleModal isOpen={open} onClose={() => setOpen(false)}/>
         </section>
     )
 }

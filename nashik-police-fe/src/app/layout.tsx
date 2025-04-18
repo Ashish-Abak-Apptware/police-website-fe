@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Khand } from "next/font/google";
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +47,7 @@ export default function RootLayout({
          cz-shortcut-listen="true"
       >
         {children}
+        <Toaster position="top-center"/>
       </body>
     </html>
   );
