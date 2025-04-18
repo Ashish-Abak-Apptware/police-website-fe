@@ -13,7 +13,7 @@ export const Button = ({ child, onClick, varient = "white" }: buttonProps) => {
     <section>
       <button
         onClick={onClick}
-        className={`w-fit flex items-center justify-center ${variantClasses[varient]}`}
+        className={`w-fit flex items-center justify-center cursor-pointer ${variantClasses[varient]}`}
       >
         {child}
       </button>
