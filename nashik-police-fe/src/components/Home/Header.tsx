@@ -21,7 +21,7 @@ export const Header = () => {
     setMessages(newMessage);
     setInput("");
     try {
-      const response=await fetch("http://3.109.145.170:5000/ask",{
+      const response=await fetch("https://nskchatbot.apptware.com/ask",{
         method:"POST",
         headers:{
           "content-type":"application/json",
