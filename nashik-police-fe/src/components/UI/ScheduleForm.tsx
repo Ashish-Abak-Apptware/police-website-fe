@@ -48,7 +48,7 @@ export const ScheduleForm = ({onClose}:{onClose: () => void}) => {
     //     body: JSON.stringify({ email, agenda, startTime, room })
     //   });
     toast.success(
-        <span>
+        <span className='px-5'>
           Appointment Scheduled!<br />
           {/* <a href={meetingLink} target="_blank" className="text-blue-600 underline">Join Link</a> */}
         </span>,
@@ -60,7 +60,7 @@ export const ScheduleForm = ({onClose}:{onClose: () => void}) => {
     <div className=" p-6">
               <h3 className="text-md font-medium mb-2 text-black">Select a Date & Time</h3>
     
-              <div className="flex gap-6">
+              <div className="md:flex flex flex-col gap-6">
                 <div className=''>
                   <DatePicker
                     selected={selectedDate}

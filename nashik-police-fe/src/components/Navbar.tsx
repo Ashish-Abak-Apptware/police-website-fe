@@ -25,7 +25,7 @@ const NavbarMenu=["आमच्या बद्दल","सिटीझन क�
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
-                    <MenuSquareIcon color='#03018D' size={30}/>
+                    <MenuSquareIcon color='#03018D' size={30} strokeWidth={1}/>
                 </button>
                 <div className={`content-center ${isMenuOpen ? 'hidden' : 'block md:hidden'}`}>
                         <Image src='/assets/NavbarCall.svg' alt='NavbarCall' width={65} height={40} />
